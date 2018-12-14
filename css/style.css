@@ -1,0 +1,53 @@
+.hide{
+    visibility: hidden;
+    display: none;
+}
+.header, .footer{
+    background: black;
+    color: white;
+}
+.first-header header{
+    text-align: right;
+}
+.first-header header img{
+    width: 20px;
+    height: 20px;
+}
+.name2GB div{
+    text-align: center;
+    font-size: 50px;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+}
+
+a:visited{
+    color: white;
+}
+
+a:default{
+    color: white;
+}
+
+.clear-fix{
+    clear: both;
+}
+.footer footer section{
+
+}
+    
