@@ -1,0 +1,116 @@
+body{
+    width: 100%;
+    margin: 0;
+    color: #e5dde9;
+}
+.hide{
+    visibility: hidden;
+    display: none;
+}
+.clear-fix:before, .clear-fix:after{
+    content: "";
+    display: table;
+    clear: left;
+}
+
+.clear-fix{
+    *zoom: 1;
+}
+
+/*SEARCH BAR*/
+header, footer{
+    width: 100%;
+    background: black;
+    color: #e5dde9;
+}
+.header img{
+    width: 25px;
+    height: 25px;
+    margin: 15px 3px;
+}
+.header{
+    text-align: right;
+    margin-right: 70px;
+}
+.search-bar{
+    position: relative;
+    bottom: 20px;
+    width: 250px;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10%/50%
+}
+/*Name*/
+.shop-name p{
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Navigation bar*/
+.nav-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    width: 980px;
+    height: 40px;
+    margin: 0 auto;
+}
+.nav-bar ul>li{
+    float: left;
+    width: 180px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    padding: 7px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+.nav-bar ul>li:hover{
+    background-color: #008a39;
+    text-shadow: -0.7px -0.7px #e5dde9;
+}
+
+/*FOOTER*/
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+.f-contact h3{
+    margin: 0 0 20px 0;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.f-contact ul{
+    list-style: none;
+    padding: 0;
+}
+.f-contact>ul{
+    width: 700px;
+    margin: 0 auto;
+}
+.f-contact>ul>li{
+    float: left;
+    font-size: 20px;
+}
+.sub-list>ul>li{
+    margin: 10px; 
+}
+.sub-list>ul>li>a:hover{
+    text-shadow: 1px -0.5px #fff
+}
+.about, .support{
+    margin-right: 100px;
+}
+.copyright{
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 70px;
+}
