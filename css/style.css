@@ -9,8 +9,16 @@
 .first-header header{
     text-align: right;
 }
+
 .first-header header img{
     width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.first-header header input{
+    width: 300px;
     height: 20px;
 }
 .name2GB div{
