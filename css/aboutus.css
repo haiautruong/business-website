@@ -1,0 +1,11 @@
+.main h3{
+    margin-left: 100px;
+}
+
+hr.separator-line{
+border: 0;
+height: 55px;
+background-image: url(png)
+background-repeat: no-repeat;
+}
+
