@@ -40,7 +40,8 @@ header, footer{
     height: 20px;
     padding: 5px 10px;
     font-size: 18px;
-    border-radius: 10%/50%
+    border-radius: 10%/50%;
+    border-color: black;
 }
 /*Name*/
 .shop-name p{
@@ -115,4 +116,38 @@ a:visited{
     font-size: 18px;
     font-style: italic;
     margin: 0 30px;
+}
+main{
+    color: black;
+}
+
+/*Update Promotion Information*/
+.update-promotion{
+    text-align: center;
+    margin: 0 auto;
+    margin: 20px 0;
+}
+
+.update-promotion h2{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+}
+.ip-mail-km{
+    width: 240px;
+    height: 15px;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 10px/10px;
+    border-color: black;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.btn-confirm{
+    height: 30px;
+    background-color: black;
+    color: #e5dde9;
+    border-radius: 10%/10%;
+    box-shadow: 1px 1px grey;
 }
