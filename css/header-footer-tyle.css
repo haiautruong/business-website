@@ -124,7 +124,6 @@ main{
 /*Update Promotion Information*/
 .update-promotion{
     text-align: center;
-    margin: 0 auto;
     margin: 20px 0;
 }
 
@@ -149,5 +148,8 @@ main{
     background-color: black;
     color: #e5dde9;
     border-radius: 10%/10%;
-    box-shadow: 1px 1px grey;
+    box-shadow: 0.5px 0.5px grey;
+}
+.btn-confirm:hover{
+    color: #fff;
 }
