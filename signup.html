@@ -39,45 +39,22 @@
     </header>
     
     <main class="clear-fix">
-        <section class="main">
-            <h2 class="hide">form đăng ký</h2>
-            <h3>Tạo tài khoản</h3>
-            <form action="get" class="form-register">
-                <div>
-                    <label for="first-name">Họ</label>
-                    <br>
-                    <input id="first-name">
-                    </br>
-                </div>
-                <div>
-                    <label for="last-name">Tên</label>
-                    <br>
-                    <input id="last-name">
-                    </br>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <br>
-                    <input id="email">
-                    </br>
-                </div>
-                <div>
-                    <label for="password">Mật khẩu</label>
-                    <br>
-                    <input id="password">
-                    </br>
-                </div>
-                <div>
-                    <label for="re-password">Nhập lại mật khẩu</label>
-                    <br>
-                    <input id="re-password">
-                    </br>
-                </div>
-                <div class="button">
-                    <button type="submit">Tạo tài khoản</button>
-                </div>
-            </form>
-        </section>
+        <section class="signup clear-fix">
+           <h2>Đăng kí</h2>
+           <form action="" method="get" class="info-signup">
+               <label for="lastname-signup">Họ</label>
+               <input type="email" name="lastname-signup">
+               <label for="firstname-signup">Tên</label>
+               <input type="firstname" name="firstname-signup">
+               <label for="email-signup">Email</label>
+               <input type="email" id="email-signup" name="email-signup">
+               <label for="password-signup">Mật khẩu</label>
+               <input type="password" name="password-signup">
+               <label for="repass-signup">Nhập lại mật khẩu</label>
+               <input type="repass" name="repass-signup">
+               <button class="btn-signup clear-fix" name="btn-signup">Tạo tài khoản</button>
+           </form>
+       </section>
         <aside class="update-promotion">
             <form action="">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
@@ -86,6 +63,7 @@
             </form>
         </aside>
     </main>
+    
     <footer class="footer clear-fix">
         <section class="f-contact">
             <h2 class="hiden"></h2>

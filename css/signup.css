@@ -1,70 +1,44 @@
-.main h3{
+.info-signup{
+    margin: 0 auto;
+    width: 360px;
+    
+}
+.signup h2{
     text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
+    margin-top: 30px;
 }
-
-.form-register{
-    text-align: center;
+.info-signup label, .info-signup input{
+    display: block;
 }
-
-.form-register div{
-    margin-bottom: 10px;
-}
-
-.form-register div label{
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-register div input{
-    border-radius: 6px;
-    font-size: 20px;
-}
-
-.button button{
-  
-  background-color: #000000; 
-   border: 2px solid #000000; 
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-    padding: 10px 24px;
-  font-size: 15px;
-    border-radius: 12px;
-}
-
-.button button:hover {
-  background-color: #FFFFFF; 
-  color: black;
-}
-
-
-.news-register {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.news-register p{
-    font-weight: bold;
-}
-
-.news-register input{
-    border-radius: 12px;
-    padding: 5px 5px
-}
-
-.news-register button{
-    background-color: #000000;
-    color: white;
-    border-radius: 12px;
-    border: 2px solid #000000; 
+.info-signup label{
     font-size: 15px;
-    padding: 10px 12px
+    font-style: normal;
+    font-weight: 500;
+    margin: 0  0 5px 20px;
+    padding-left: 0;
+}
+.info-signup input{
+    height: 40px;
+    border-radius: 10px/10px;
+    border: 2px solid #000;
+    width: 300px;
+    margin: 0 auto 15px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.btn-signup{
+    height: 40px;
+    width: 125px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #e5dde9;
+    background-color: #000;
+    margin-left: 120px;
+    border: 1px solid #000;
+    border-radius: 13px/13px;
+}
+.btn-signup:hover{
+    color: #fff;
+    font-size: 17.1px;
 }
 
-.news-register button:hover{
-    background-color: #FFFFFF; 
-    color: black;
-}
