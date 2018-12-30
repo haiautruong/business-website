@@ -22,11 +22,11 @@
         </section>
         <nav class="nav-bar">
             <ul class="clear-fix">
-                <li><a href="khuyen-mai.html">Khuyến mãi</a></li>
-                <li><a href="bestseller.html">Bestseller</a></li>
-                <li><a href="trang-diem.html">Trang điểm</a></li>
-                <li><a href="cham-soc-da.html">Chăm sóc da</a></li>
-                <li><a href="hang-moi-ve.html">Hàng mới về</a></li>
+                <li><a href="khuyen-mai.php">Khuyến mãi</a></li>
+                <li><a href="bestseller.php">Bestseller</a></li>
+                <li><a href="trang-diem.php">Trang điểm</a></li>
+                <li><a href="cham-soc-da.php">Chăm sóc da</a></li>
+                <li><a href="hang-moi-ve.php">Hàng mới về</a></li>
             </ul>
         </nav>
     </header>
@@ -40,8 +40,8 @@
                <label for="pass-login">Mật khẩu</label>
                <input type="password" name="pass-login">
                <ul class="list-login clear-fix">
-                   <li id="li-first-login"><a href="quen-pass.html">Quên mật khẩu?</a></li>
-                   <li id="li-second-login" ><a href="signup.html">Tạo tài khoản</a></li>
+                   <li id="li-first-login"><a href="quen-pass.php">Quên mật khẩu?</a></li>
+                   <li id="li-second-login" ><a href="signup.php">Tạo tài khoản</a></li>
                </ul>
                <button class="btn-login clear-fix" name="btn-login">Đăng nhập</button>
            </form>
@@ -62,8 +62,8 @@
                    <section class="sub-list about">
                        <h3>About</h3>
                        <ul>
-                           <li><a href="our-story.html">Our story</a></li>
-                           <li><a href="contact-us.html">Contact Us</a></li>
+                           <li><a href="our-story.php">Our story</a></li>
+                           <li><a href="contact-us.php">Contact Us</a></li>
                        </ul>
                    </section>
                </li>
@@ -71,8 +71,8 @@
                    <section class="sub-list support">
                        <h3>Trợ giúp</h3>
                        <ul>
-                           <li><a href="question-common.html">Các câu hỏi thường gặp</a></li>
-                           <li><a href="help-center.html">Help Center</a></li>
+                           <li><a href="question-common.php">Các câu hỏi thường gặp</a></li>
+                           <li><a href="help-center.php">Help Center</a></li>
                        </ul>
                    </section>
                </li>
@@ -80,8 +80,8 @@
                    <section class="sub-list">
                        <h3>2GBers</h3>
                        <ul>
-                           <li><a href="my-account.html">Tài khoản của tôi</a></li>
-                           <li><a href="check-order.html">Tra cứu đơn hàng</a></li>
+                           <li><a href="my-account.php">Tài khoản của tôi</a></li>
+                           <li><a href="check-order.php">Tra cứu đơn hàng</a></li>
                        </ul>
                    </section>
                </li>
@@ -94,3 +94,9 @@
     </footer>
 </body>
 </html>
+<?php
+    function dangnhap()
+    {
+        
+    }
+?>
