@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>2GB - Đăng nhập</title>
+    <title>2GB - Contact us</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
@@ -38,23 +37,33 @@
         </nav>
     </header>
     
-    <main class="clear-fix">
-        <section class="signup clear-fix">
-           <h2>Đăng kí</h2>
-           <form action="" method="get" class="info-signup">
-               <label for="fullname-signup">Họ và tên</label>
-               <input type="fullname" name="fullname-signup">
-               <label for="email-signup">Email</label>
-               <input type="email" id="email-signup" name="email-signup">
-               <label for="password-signup">Mật khẩu</label>
-               <input type="password" name="password-signup">
-               <label for="repass-signup">Nhập lại mật khẩu</label>
-               <input type="repass" name="repass-signup">
-               <button class="btn-signup clear-fix" name="btn-signup">Tạo tài khoản</button>
-           </form>
-       </section>
+    <main class="main-content">
+        <h2 class="hide">Contact Us</h2>
+        <div class="title">
+            <p>Contact Us</p>
+            <hr>
+        </div>
+        <section class="contact-us-plain-text">
+            <p>
+                Hãy cho chúng tôi biết khi bạn có bất kì thắc mắc nào về đơn hàng của bạn, sản phẩm của chúng tôi, phương thức vận chuyển, cách thanh toán, cách đặt hàng, ... Đội ngũ chăm sóc khách hàng của chúng tôi sẽ vui lòng giải đáp bất kì thắc mắc nào của bạn. Hãy liên lạc với nhân viên chăm sóc khách hàng của chúng tôi bằng những phương tiện sau :
+            </p>
+            <ul class="contact-way">
+                <li>
+                    <div>
+                        <img src="images/phone-icon.png" alt="icon-phone">
+                        <p>0707565362 - 0914269248</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/mail-icon.png" alt="icon-mail">
+                        <p>shop2gb@gmail.com</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
         <aside class="update-promotion">
-            <form action="">
+            <form action="" method="get">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
                 <input class="ip-mail-km" placeholder="Email Address">
                 <button class="btn-confirm">Gửi đăng ký</button>
