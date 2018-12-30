@@ -7,6 +7,11 @@
     text-align: center;
     margin-top: 30px;
 }
+
+.login h4{
+    text-align: center;
+    color: red;
+}
 .info-login label, .info-login input{
     display: block;
 }
