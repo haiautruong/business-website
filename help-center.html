@@ -36,11 +36,42 @@
             </ul>
         </nav>
     </header>
+    
     <main class="main-content">
-    
-    nội dung Help Center
-    
-     <aside class="update-promotion">
+        <section class="help-center">
+            <div class="banner">
+                <p class="style-subtitle">Tự tìm kiếm câu trả lời nhé</p>
+                <img src="images/blink-icon.png" alt="icon-blink">
+            </div>
+            <div class="help-list">
+                <div class="item">
+                        <img src="images/shipping-icon.png" alt="icon-ship">
+                        <p>Chính sách giao hàng</p>
+                </div>
+                <div class="item">
+                    <img src="images/add-to-cart-icon.png" alt="icon-add-to-cart">
+                    <p>Hướng dẫn đặt hàng</p>
+                </div>
+                <div class="item">
+                    <img src="images/carton-box-icon.png" alt="icon-carton-box">
+                     <p>Chính sách đổi trả</p>
+                </div>
+                <div class="item">
+                    <img src="images/order-icon.png" alt="icon-order">
+                    <p>Hướng dẫn điều chỉnh đơn hàng</p>
+                </div>
+                <div class="item">
+                    <img src="images/user-icon.png" alt="icon-user">
+                    <p>Hướng dẫn sử dụng tài khoản</p>
+                </div>
+                <div class="item">
+                <div class="item">
+                    <img src="images/worldwide-location-icon.png" alt="icon-user">
+                    <p>Hướng dẫn tra cứu đơn hàng</p>
+                </div>
+            </div>
+        </section>
+        <aside class="update-promotion">
             <form action="" method="get">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
                 <input class="ip-mail-km" placeholder="Email Address">
