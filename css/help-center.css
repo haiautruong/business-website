@@ -1,15 +1,18 @@
 .banner img{
     display: block;
     margin: auto;
+    margin-bottom: 10%;
     width: 10%;
     height: 10%;
 }
-.help-list img{
-    width: 100px;
-    height: 100px;
+.option-list img{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
 }
-.item{
-    float: left;
+.option-list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
 }
-
-

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trợ giúp</title>
+    <title>Trung tâm hỗ trợ</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
@@ -44,31 +44,24 @@
                 <p class="style-subtitle">Tự tìm kiếm câu trả lời nhé</p>
                 <img src="images/blink-icon.png" alt="icon-blink">
             </div>
-            <div class="help-list">
-                <div class="item">
-                        <img src="images/shipping-icon.png" alt="icon-ship">
-                        <p>Chính sách giao hàng</p>
+            <div class="option-list">
+                <div>
+                    <a href="#"><img src="images/shipping-icon.png" alt="shipping-rule"></a>
                 </div>
-                <div class="item">
-                    <img src="images/add-to-cart-icon.png" alt="icon-add-to-cart">
-                    <p>Hướng dẫn đặt hàng</p>
+                <div>
+                    <a href="#"><img src="images/add-to-cart-icon.png" alt="add-to-cart-guide"></a>
                 </div>
-                <div class="item">
-                    <img src="images/carton-box-icon.png" alt="icon-carton-box">
-                     <p>Chính sách đổi trả</p>
+                <div>
+                    <a href="#"><img src="images/carton-box-icon.png" alt="exchange-rule"></a>
                 </div>
-                <div class="item">
-                    <img src="images/order-icon.png" alt="icon-order">
-                    <p>Hướng dẫn điều chỉnh đơn hàng</p>
+                <div>
+                    <a href="#"><img src="images/order-icon.png" alt="modify-cancel-rule"></a>
                 </div>
-                <div class="item">
-                    <img src="images/user-icon.png" alt="icon-user">
-                    <p>Hướng dẫn sử dụng tài khoản</p>
+                <div>
+                    <a href="#"><img src="images/user-icon.png" alt="account-guide"></a>
                 </div>
-                <div class="item">
-                <div class="item">
-                    <img src="images/worldwide-location-icon.png" alt="icon-user">
-                    <p>Hướng dẫn tra cứu đơn hàng</p>
+                <div>
+                    <a href="#"><img src="images/worldwide-location-icon.png" alt="location-guide"></a>
                 </div>
             </div>
         </section>
