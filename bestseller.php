@@ -26,10 +26,10 @@
         <section class="header">
             <h1 class="hide">Search bar</h1>
             <a href="https://www.facebook.com/groups/1866521173441261/" target="_blank" ><img src="images/fb_icon(2).png" alt="icon-facebook"></a>
-            <a href="#" target="_blank"><img src="images/ins_icon.png" alt="icon-insatagram"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/ins_icon.png" alt="icon-insatagram"></a>
             <input class="search-bar" placeholder="Search">
 
-            <a href="#" target="_self"><img src="images/cart_icon.png" alt="icon-cart"></a>
+            <a href="gio-hang.php" target="_self"><img src="images/cart_icon.png" alt="icon-cart"></a>
             <a href="#" target="_self"><img src="images/account_icon.png" alt="icon-account"></a>
         </section>
         <section class="shop-name">
