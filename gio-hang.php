@@ -16,7 +16,8 @@
             <input class="search-bar" placeholder="Search">
 
             <a href="gio-hang.php" target="_self"><img src="images/cart_icon.png" alt="icon-cart"></a>
-            <a href="#" target="_self"><img src="images/account_icon.png" alt="icon-account"></a>
+            <a href="my-account.php" target="_self"><img src="images/account_icon.png" alt="icon-account"></a>
+            <a href="login.php" class="login-text">Đăng nhập</a>
         </section>
         <section class="shop-name">
             <p><a href="trang-chu.php">2GB Shop</a></p>
@@ -37,9 +38,31 @@
         </nav>
     </header>
     <main class="main-content">
-    
-    nội dung our Tra cứu đơn hàng
-    
+        <section class="list-product-cart">
+            <table border="1">
+                <tr class="col-name-cart">
+                    <th id="col-name-product-cart">Sản phẩm</th>
+                    <th id="col-price-cart">Giá</th>
+                    <th id="col-quantity-cart">Số lượng</th>
+                    <th id="col-total-cart">Thành tiền</th>
+                    <th id="col-delete-cart">Xóa</th>
+                </tr>
+                <tr>
+                    <td>Đây là tên sản phẩm</td>
+                    <td>1000000</td>
+                    <td>nút tăng giảm số lượng</td>
+                    <td>100000000000</td>
+                    <td><a><img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart"></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a><img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart"></a></td>
+                </tr>
+            </table>
+        </section>
          <aside class="update-promotion">
             <form action="" method="get">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
