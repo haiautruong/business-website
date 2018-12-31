@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trung tâm hỗ trợ</title>
+    <title>2GB - Contact us</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
@@ -39,32 +39,61 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hide">Trung tâm hỗ trợ</h2>
-        <section class="help-center">
-            <div class="banner">
-                <p class="style-subtitle">Tự tìm kiếm câu trả lời nhé</p>
-                <img src="images/blink-icon.png" alt="icon-blink">
-            </div>
-            <div class="option-list">
-                <div>
-                    <a href="shipping-rule.php" target="_self"><img src="images/shipping-icon.png" alt="shipping-rule"></a>
-                </div>
-                <div>
-                    <a href="add-to-cart-guide.php" target="_self"><img src="images/add-to-cart-icon.png" alt="add-to-cart-guide"></a>
-                </div>
-                <div>
-                    <a href="exchange-rule.php" target="_self"><img src="images/carton-box-icon.png" alt="exchange-rule"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/order-icon.png" alt="modify-cancel-rule"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/user-icon.png" alt="account-guide"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/worldwide-location-icon.png" alt="location-guide"></a>
-                </div>
-            </div>
+        <h2 class="hidden">Chính sách đổi trả</h2>
+        <div class="title">
+            <p>Chính sách đổi trả</p>
+            <hr>
+        </div>
+        <section class="faq-plain-text">
+            <p>
+                <b>Chính sách đổi trả : </b>
+            </p>
+            <p>
+               <b>1. Các trường hợp nhận đổi trả : </b>
+            </p>
+            <p>
+                - Sản phẩm mắc lỗi từ phía nhà sản xuất (hỏng hóc, đổ vỡ sản phẩm, bị lỗi kĩ thuật…).
+            </p>
+            <p>
+- Sản phẩm bị hư hỏng, trầy xước do quá trình vận chuyển của nhân viên giao hàng.
+                </p>
+<p>     
+- Sản phẩm đã hết hoặc gần hết thời hạn sử dụng.
+</p>
+            <p>
+- Sản phẩm không đúng như yêu cầu của khách hàng do Hasaki soạn sai sản phẩm hoặc lấy nhầm tông màu , loại sản phẩm.
+</p>
+            <p>
+- Sản phẩm còn nguyên vỏ hộp, tem nhãn và chưa qua sử dụng.
+</p>
+            <p>
+<b>2.	Các trường hợp không áp dụng đổi trả.</b>
+                </p>
+<p>
+-	Sản phẩm đã quá hạn đổi trả (14 ngày).
+</p>
+-	Sản phẩm đã bị bóc tem nhãn, seal nếu có.
+<p>
+-	Sản phẩm khách đã thử hoặc qua sử dụng từ 1 lần trở lên.
+</p>
+            <p>
+-	Bao bì, vỏ hộp sản phẩm bị hư hỏng, trầy xước do lỗi từ phía khách hàng.
+</p>
+            <p>
+- Sản phẩm không phải mua từ bên Hasaki.
+</p>
+            <p>
+<b>3.	Cách thức đổi trả :</b>
+</p>
+            <p>
+- 2GB nhận đổi trả sản phẩm cho khách hàng trong vòng 14 ngày , tính kể từ ngày khách hàng mua hoặc nhận được sản phẩm từ bên giao hàng.
+</p>
+            <p>
+- Khách hàng cần phải thông báo cho nhân viên 2GB lí do đổi trả và địa chỉ, số điện thoại liên lạc chính xác để 2GB có thể thực hiện quy trình đổi trả sản phẩm một cách nhanh chóng nhất theo yêu cầu của quý khách.
+</p>
+            <p>
+- 2GB quan tâm đến sự hài lòng của khách hàng và mong muốn nâng cao chất lượng dịch vụ, 2GB nhận đổi trả sản phẩm miễn phí cho khách hàng theo đúng quy định nêu trên . Khách ở khu vực Hồ Chí Minh , 2GB khuyến khích khách đến Showroom để nhân viên có thể check lại sản phẩm và khách có thể xem & lựa chọn đổi sản phẩm đúng theo ý của quý khách. Với các khách tỉnh, Quý khách có thể chuyển hàng qua bưu điện & Liên hệ với 2GB về sản phẩm đổi, mã bưu điện,… để 2GB có thể xử lý và gửi hàng lại sớm nhất khi nhận được sản phẩm.
+</p>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">
@@ -74,6 +103,7 @@
             </form>
         </aside>
     </main>
+    
     <footer class="footer clear-fix">
         <section class="f-contact">
             <h2 class="hiden"></h2>
