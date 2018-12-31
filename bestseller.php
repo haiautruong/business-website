@@ -52,7 +52,7 @@
     </header>
     <main class="main-content">
     
-        <form action="" method="post" class="items-form">
+        <section class="items-form">
             <h2 class="hide">Trang điểm</h2>
             <div class="title">
                 <p>Bestseller</p>
@@ -68,18 +68,28 @@
             </div>
             <ul class="list-product-make-up clear-fix">
                 <li>
-                    <div> 
-                        <img src="<?php echo $row[2]; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
+                    <div id="product1">
+                        <label value='1'></label>
+                        <img src="<?php echo $row['image_link']; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
                         <p class="name-product-make-up"><?php echo $row['name']; ?></p>
                         <p class="price-make-up"><?php echo utf8_encode($row['price']); ?></p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
+                        <button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div id="product2">
     
                         <?php $row = mysqli_fetch_array($query);?>
-                        <img src="<?php echo $row[2]; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
+                        <img src="<?php echo $row['image_link']; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
+                        <p class="name-product-make-up"><?php echo $row['name']; ?></p>
+                        <p class="price-make-up"><?php echo utf8_encode($row['price']); ?></p>
+                        <button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <?php $row = mysqli_fetch_array($query);?>
+                        <img src="<?php echo $row['image_link']; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
                         <p class="name-product-make-up"><?php echo $row['name']; ?></p>
                         <p class="price-make-up"><?php echo utf8_encode($row['price']); ?></p>
                         <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
@@ -88,16 +98,7 @@
                 <li>
                     <div>
                     <?php $row = mysqli_fetch_array($query);?>
-                        <img src="<?php echo $row[2]; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up"><?php echo $row['name']; ?></p>
-                        <p class="price-make-up"><?php echo utf8_encode($row['price']); ?></p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                    <?php $row = mysqli_fetch_array($query);?>
-                        <img src="<?php echo $row[2]; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
+                        <img src="<?php echo $row['image_link']; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
                         <p class="name-product-make-up"><?php echo $row['name']; ?></p>
                         <p class="price-make-up"><?php echo utf8_encode($row['price']); ?></p>
                         <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
@@ -107,7 +108,7 @@
             <ul class="list-product-make-up clear-fix">
                 <li>
                 <?php $row = mysqli_fetch_array($query);?>
-                        <img src="<?php echo $row[2]; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
+                        <img src="<?php echo $row['image_link']; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
                         <p class="name-product-make-up"><?php echo $row['name']; ?></p>
                         <p class="price-make-up"><?php echo utf8_encode($row['price']); ?></p>
                         <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
@@ -138,7 +139,7 @@
                 </li>
             </ul>
 
-        </form>
+        </section>
         <section>
             <div class="pagination">
                 <a href="#" class="page active">1</a>
@@ -206,9 +207,22 @@
 
 </html>
 
+<!-- Xử lý sort-->
 <script>
            document.getElementsByName('sort-mk')[0].onchange = function() {
                 
             window.location.href = "bestseller.php?sort="+ document.getElementsByName('sort-mk')[0].value;
            }
     </script>
+<!-- Xử lý thêm giỏ hàng-->
+
+    <script>
+            var i;
+            for (i = 0; i < 2; i++) { 
+                document.getElementsByName('btn-add-checkout')[i].onclick = function(e){
+                    console.log('1');
+                  alert(e.target.parentNode.id);
+                }
+            }
+            
+        </script>
