@@ -46,7 +46,7 @@
             </div>
             <div class="option-list">
                 <div>
-                    <a href="#"><img src="images/shipping-icon.png" alt="shipping-rule"></a>
+                    <a href="shipping-rule.php" target="_self"><img src="images/shipping-icon.png" alt="shipping-rule"></a>
                 </div>
                 <div>
                     <a href="#"><img src="images/add-to-cart-icon.png" alt="add-to-cart-guide"></a>
