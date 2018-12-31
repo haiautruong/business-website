@@ -52,7 +52,7 @@
                    <li id="li-first-login"><a href="quen-pass.php">Quên mật khẩu?</a></li>
                    <li id="li-second-login" ><a href="signup.php">Tạo tài khoản</a></li>
                </ul>
-               <button  onclick="JSalert()" class="btn-login clear-fix" name="btn-login">Đăng nhập</button>
+               <button class="btn-login clear-fix" name="btn-login">Đăng nhập</button>
            </form>
        </section>
         <aside class="update-promotion clear-fix">
