@@ -16,7 +16,8 @@
             <input class="search-bar" placeholder="Search">
 
             <a href="gio-hang.php" target="_self"><img src="images/cart_icon.png" alt="icon-cart"></a>
-            <a href="#" target="_self"><img src="images/account_icon.png" alt="icon-account"></a>
+            <a href="my-account.php" target="_self"><img src="images/account_icon.png" alt="icon-account"></a>
+            <a href="login.php" class="login-text">Đăng nhập</a>
         </section>
         <section class="shop-name">
             <p><a href="trang-chu.php">2GB Shop</a></p>
