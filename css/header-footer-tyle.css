@@ -33,6 +33,11 @@ header, footer{
     text-align: right;
     margin-right: 70px;
 }
+.login-text{
+    position: relative;
+    bottom: 20px;
+    margin-left: 10px;
+}
 .search-bar{
     position: relative;
     bottom: 20px;
