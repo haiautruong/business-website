@@ -39,6 +39,7 @@
     </header>
     
     <main class="main-content">
+        <h2 class="hide">Trung tâm hỗ trợ</h2>
         <section class="help-center">
             <div class="banner">
                 <p class="style-subtitle">Tự tìm kiếm câu trả lời nhé</p>
@@ -49,7 +50,7 @@
                     <a href="shipping-rule.php" target="_self"><img src="images/shipping-icon.png" alt="shipping-rule"></a>
                 </div>
                 <div>
-                    <a href="#"><img src="images/add-to-cart-icon.png" alt="add-to-cart-guide"></a>
+                    <a href="add-to-cart-guide.php" target="_self"><img src="images/add-to-cart-icon.png" alt="add-to-cart-guide"></a>
                 </div>
                 <div>
                     <a href="#"><img src="images/carton-box-icon.png" alt="exchange-rule"></a>

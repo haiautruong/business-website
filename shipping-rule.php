@@ -39,7 +39,7 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hidden">Contact Us</h2>
+        <h2 class="hidden">Chính sách giao hàng</h2>
         <div class="title">
             <p>Chính sách giao hàng</p>
             <hr>

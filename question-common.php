@@ -39,7 +39,7 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hide">FAQs</h2>
+        <h2 class="hidden">FAQs</h2>
         <div class="title">
             <p>Các câu hỏi thường gặp</p>
             <hr>
@@ -92,6 +92,7 @@
                             </p>
                         </div>
                     </div>
+                    <b>updated...</b>
                 </li>
             </ul>  
         </section>
