@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Tra cứu đơn hàng</title>
@@ -11,16 +12,25 @@
     <header class="clear-fix">
         <section class="header">
             <h1 class="hide">Search bar</h1>
-            <a href="https://www.facebook.com/groups/1866521173441261/" target="_blank" ><img src="images/fb_icon(2).png" alt="icon-facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="images/ins_icon.png" alt="icon-insatagram"></a>
+            <a href="https://www.facebook.com/groups/1866521173441261/" target="_blank">
+                <img src="images/fb_icon(2).png" alt="icon-facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/ins_icon.png" alt="icon-insatagram">
+            </a>
             <input class="search-bar" placeholder="Search">
 
-            <a href="gio-hang.php" target="_self"><img src="images/cart_icon.png" alt="icon-cart"></a>
-            <a href="my-account.php" target="_self"><img src="images/account_icon.png" alt="icon-account"></a>
+            <a href="gio-hang.php" target="_self">
+                <img src="images/cart_icon.png" alt="icon-cart">
+            </a>
+            <a href="my-account.php" target="_self">
+                <img src="images/account_icon.png" alt="icon-account">
+            </a>
             <a href="login.php" class="login-text">Đăng nhập</a>
         </section>
         <section class="shop-name">
-            <p><a href="trang-chu.php">2GB Shop</a></p>
+            <p><a href="trang-chu.php">2GB Shop</a>
+            </p>
         </section>
         <nav class="nav-bar">
             <ul class="clear-fix">
@@ -38,10 +48,10 @@
         </nav>
     </header>
     <main class="main-content">
-    
-    nội dung our Tra cứu đơn hàng
-    
-         <aside class="update-promotion">
+        <section class="container">
+
+        </section>
+        <aside class="update-promotion">
             <form action="" method="get">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
                 <input class="ip-mail-km" placeholder="Email Address">

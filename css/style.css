@@ -9,6 +9,7 @@
 @import 'help-center.css';
 @import 'cart.css';
 @import 'modify-cancel-order.css';
+@import 'detail-info-product.css';
 
 body{
     min-height: 100%;
@@ -21,5 +22,8 @@ body{
 }
 main{
     padding: 10px;
+    min-height: 400px;
+}
+.container{
     min-height: 400px;
 }
