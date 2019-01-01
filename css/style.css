@@ -20,4 +20,5 @@ body{
 }
 main{
     padding: 10px;
+    min-height: 400px;
 }

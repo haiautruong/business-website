@@ -130,7 +130,8 @@ main{
 /*Update Promotion Information*/
 .update-promotion{
     text-align: center;
-    margin: 20px 0;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .update-promotion h2{

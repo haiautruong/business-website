@@ -38,7 +38,13 @@
         </nav>
     </header>
     <main class="main-content">
+       
         <section class="list-product-cart">
+           <h2 class="hide">Giỏ hàng</h2>
+            <div class="title">
+                <p>Giỏ hàng</p>
+                <hr>
+            </div>
             <table border="1">
                 <tr class="col-name-cart">
                     <th id="col-name-product-cart">Sản phẩm</th>

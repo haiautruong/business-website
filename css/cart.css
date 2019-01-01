@@ -27,3 +27,7 @@
 .name-item-cart{
     margin: 0;
 }
+.list-product-cart{
+    min-height: 300px;
+    margin-top: 50px;
+}
