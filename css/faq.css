@@ -1,6 +1,10 @@
 .faq-plain-text{
     text-align: justify;
 }
-.faq-list{
-    list-style: none;
+.faq-plain-text img{
+    display: block;
+    margin: auto;
+    margin-bottom: 10%;
+    width: 10%;
+    height: 10%;
 }

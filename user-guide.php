@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>2GB - Contact us</title>
+    <title>2GB - Hướng dẫn thay đổi hoặc hủy đơn hàng</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
@@ -39,58 +39,46 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hidden">Chính sách đổi trả</h2>
+        <h2 class="hidden">Hướng dẫn sử dụng tài khoản</h2>
         <div class="title">
-            <p>Chính sách đổi trả</p>
+            <p>Hướng dẫn sử dụng tài khoản</p>
             <hr>
         </div>
         <section class="faq-plain-text">
-            <p>
-               <b>1. Các trường hợp nhận đổi trả : </b>
-            </p>
-            <p>
-                - Sản phẩm mắc lỗi từ phía nhà sản xuất (hỏng hóc, đổ vỡ sản phẩm, bị lỗi kĩ thuật…).
-            </p>
-            <p>
-- Sản phẩm bị hư hỏng, trầy xước do quá trình vận chuyển của nhân viên giao hàng.
+            <details>
+                <summary>
+                    <b>Tôi có thể thay đổi địa chỉ nhận hàng trong tài khoản của tôi không?</b>
+                </summary>
+                <p>
+                    Bạn có thể thay đổi địa chỉ nhận hàng củ mình trong mục <b>Tài khoản của tôi</b> (bấm vào biểu tượng ở góc trên bên phải trang web) sau khi bạn đã đăng nhập vào tài khoản của mình.
                 </p>
-<p>     
-- Sản phẩm đã hết hoặc gần hết thời hạn sử dụng.
-</p>
-            <p>
-- Sản phẩm không đúng như yêu cầu của khách hàng do Hasaki soạn sai sản phẩm hoặc lấy nhầm tông màu , loại sản phẩm.
-</p>
-            <p>
-- Sản phẩm còn nguyên vỏ hộp, tem nhãn và chưa qua sử dụng.
-</p>
-            <p>
-<b>2.	Các trường hợp không áp dụng đổi trả.</b>
+                <p>
+                    Bấm vào <b>Đăng nhập</b> ở góc trên bên phải màn hình. Sau đó bạn có thể vào xem hoặc chỉnh sửa Tài khoản của mình bằng cách bấm vài biểu tượng <b>Tài khoản của tôi</b>. Nếu bạn vẫn chưa tạo tài khoản, hãy bấm vào <b>Tạo tài khoản</b> và làm đầy đủ các bước để trở thành thành viên 2GB nhé. Bạn sẽ nhận được nhiều ưu đãi ở lần mua hàng thứ 2 trở lên đấy nhé ;) 
                 </p>
-<p>
--	Sản phẩm đã quá hạn đổi trả (14 ngày).
-</p>
--	Sản phẩm đã bị bóc tem nhãn, seal nếu có.
-<p>
--	Sản phẩm khách đã thử hoặc qua sử dụng từ 1 lần trở lên.
-</p>
-            <p>
--	Bao bì, vỏ hộp sản phẩm bị hư hỏng, trầy xước do lỗi từ phía khách hàng.
-</p>
-            <p>
-- Sản phẩm không phải mua từ bên Hasaki.
-</p>
-            <p>
-<b>3.	Cách thức đổi trả :</b>
-</p>
-            <p>
-- 2GB nhận đổi trả sản phẩm cho khách hàng trong vòng 14 ngày , tính kể từ ngày khách hàng mua hoặc nhận được sản phẩm từ bên giao hàng.
-</p>
-            <p>
-- Khách hàng cần phải thông báo cho nhân viên 2GB lí do đổi trả và địa chỉ, số điện thoại liên lạc chính xác để 2GB có thể thực hiện quy trình đổi trả sản phẩm một cách nhanh chóng nhất theo yêu cầu của quý khách.
-</p>
-            <p>
-- 2GB quan tâm đến sự hài lòng của khách hàng và mong muốn nâng cao chất lượng dịch vụ, 2GB nhận đổi trả sản phẩm miễn phí cho khách hàng theo đúng quy định nêu trên . Khách ở khu vực Hồ Chí Minh , 2GB khuyến khích khách đến Showroom để nhân viên có thể check lại sản phẩm và khách có thể xem & lựa chọn đổi sản phẩm đúng theo ý của quý khách. Với các khách tỉnh, Quý khách có thể chuyển hàng qua bưu điện & Liên hệ với 2GB về sản phẩm đổi, mã bưu điện,… để 2GB có thể xử lý và gửi hàng lại sớm nhất khi nhận được sản phẩm.
-</p>
+                <p>
+                    Sau khi đã vào được trang Tài khoản của tôi, nếu bạn chưa từng cập nhật địa chỉ của mình thì hãy nhập đầy đủ theo yêu cầu và bấm vào nút <b>Lưu thay đổi</b> để lưu lại địa chỉ của mình nhé. Bạn sẽ không phải điền lại phần thông tin nhận hàng khi thực hiện các bước thanh toán nữa nhé ;) 
+                    Nếu bạn đã cập nhật địa chỉ nhận hàng và muốn thay đổi, hãy thay đổi những ô có thông tin bạn muốn thay đổi, sau đó bấm nút <b>Lưu thay đổi</b> để lưu lại những thông tin bạn mới cấp nhật lại nhé ;)    
+                </p>
+            </details>
+            <details>
+                <summary>
+                 <b>Tại sao tôi không thể đăng nhập vào tài khoản của mình?</b>
+                </summary>
+                <p>
+                   Nếu bạn đã đăng kí tài khoản và trở thành thành viên của gia đình 2GB, nhưng bạn không thể đăng nhập vào tài khoản của mình, có thể bạn đã gõ sai địa chỉ email hoặc mật khẩu. Trường hợp này, bạn vui lòng kiểm trả lại địa chỉ email có đúng với địa chỉ email bạn đã đăng kí hay chưa, hoặc bạn có vô ý bật Capslock khi gõ mật khẩu hay không.
+                </p>
+                <p>
+                    Nếu bạn chắc chắn rằng địa chỉ email đã đúng rồi, hoặc bạn đã quên mật khẩu khi đăng kí, hãy bấm vào <b>Quên mật khẩu</b>, nhập email mà bạn đã đăng kí với chúng tôi, và đăng kí một mật khẩu mới nhé ;) Sau đó hãy đăng nhập vào 2GB bằng mật khẩu mới này nhé bạn ơi ;) 
+                </p>
+            </details>
+            <details>
+                <summary>
+                    <b>Làm sao để thay đổi mật khẩu của tôi?</b>
+                </summary>
+                <p>
+                    Để thay đổi mật khẩu, hãy vào mục <b>Tài khoản của tôi</b> (bấm vào biểu tượng <b>Tài khoản của tôi</b> ở góc trên bên phải trang web), sau đó vào mục <b>Thay đổi mật khẩu</b>, nhập mật khẩu cũ, mật khẩu mới và xác nhận lại mật khẩu mới và bấm vào nút <b>Lưu thay đổi</b> để lưu lại mật khẩu mới nhé. Oử các lần đăng nhập sau, bạn hãy sử dụng mật khẩu này để đăng nhập vào 2GB nhé ;) 
+                </p>
+            </details>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">

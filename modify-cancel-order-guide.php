@@ -39,14 +39,14 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hidden">Hướng dẫn điểu chỉnh hoặc hủy đơn hàng</h2>
+        <h2 class="hidden">Hướng dẫn điều chỉnh hoặc hủy đơn hàng</h2>
         <div class="title">
             <p>Hướng dẫn điều chỉnh hoặc hủy đơn hàng</p>
             <hr>
         </div>
         <section class="faq-plain-text">
             <p class="page-main-content">
-                <b>Những thay đổi về đơn hàng : </b>
+                <b>Những thay đổi về đơn hàng</b>
             </p>
             <details>
                 <summary>
@@ -92,7 +92,7 @@
                 </p>
             </details>
             <p>
-                <b>Thay đổi địa chỉ nhận hàng :</b>
+                <b>Thay đổi địa chỉ nhận hàng</b>
             </p>
                     <details>
                         <summary>

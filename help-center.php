@@ -59,10 +59,10 @@
                     <a href="modify-cancel-order-guide.php" target="_self"><img src="images/order-icon.png" alt="modify-cancel-rule"></a>
                 </div>
                 <div>
-                    <a href="#"><img src="images/user-icon.png" alt="account-guide"></a>
+                    <a href="user-guide.php" target="_self"><img src="images/user-icon.png" alt="account-guide"></a>
                 </div>
                 <div>
-                    <a href="#"><img src="images/worldwide-location-icon.png" alt="location-guide"></a>
+                    <a href="location-guide.php" target="_self"><img src="images/worldwide-location-icon.png" alt="location-guide"></a>
                 </div>
             </div>
         </section>

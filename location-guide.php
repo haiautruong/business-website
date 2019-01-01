@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>2GB - Contact us</title>
+    <title>2GB - Hướng dẫn tra cứu đơn hàng</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
@@ -39,58 +39,39 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hidden">Chính sách đổi trả</h2>
+        <h2 class="hidden">Hướng dẫn tra cứu đơn hàng</h2>
         <div class="title">
-            <p>Chính sách đổi trả</p>
+            <p>Hướng dẫn tra cứu đơn hàng</p>
             <hr>
         </div>
         <section class="faq-plain-text">
             <p>
-               <b>1. Các trường hợp nhận đổi trả : </b>
+                <b>1. Vào mục Tra cứu đơn hàng</b>
             </p>
             <p>
-                - Sản phẩm mắc lỗi từ phía nhà sản xuất (hỏng hóc, đổ vỡ sản phẩm, bị lỗi kĩ thuật…).
+                Bấm vào biểu tượng <b>Tài khoản của tôi</b> ở góc trên bên phải trang web : 
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Nếu đơn hàng mới của bạn được hiển thị là <b>Tạm giữ hàng</b>, điều này có nghĩa là đơn hàng của bạn vẫn chưa được giao cho bên vận chuyển. 
+                    </p>
+                    <img src="#" alt="stored-scr">
+                </li>
+                <li>
+                    <p>
+                        Nếu đơn hàng mới của bạn được hiển thị là <b></b>, điều này có nghĩa là đơn hàng của bạn vẫn chưa được giao cho bên vận chuyển. Lúc này, bạn vào mục <b>Tra cứu đơn hàng</b> ở góc dưới bên phải màn hình, bạn sẽ được hiển thị thông tin về đơn hàng đang được giao của bạn, bao gồm mã vận đơn. Bạn hãy sao chép mã này.
+                    </p>
+                    <img src="#" alt="sent-scr">
+                </li>
+            </ul>
+            <p>
+                <b>2. Vào trang chủ của VNPost</b>
             </p>
             <p>
-- Sản phẩm bị hư hỏng, trầy xước do quá trình vận chuyển của nhân viên giao hàng.
-                </p>
-<p>     
-- Sản phẩm đã hết hoặc gần hết thời hạn sử dụng.
-</p>
-            <p>
-- Sản phẩm không đúng như yêu cầu của khách hàng do Hasaki soạn sai sản phẩm hoặc lấy nhầm tông màu , loại sản phẩm.
-</p>
-            <p>
-- Sản phẩm còn nguyên vỏ hộp, tem nhãn và chưa qua sử dụng.
-</p>
-            <p>
-<b>2.	Các trường hợp không áp dụng đổi trả.</b>
-                </p>
-<p>
--	Sản phẩm đã quá hạn đổi trả (14 ngày).
-</p>
--	Sản phẩm đã bị bóc tem nhãn, seal nếu có.
-<p>
--	Sản phẩm khách đã thử hoặc qua sử dụng từ 1 lần trở lên.
-</p>
-            <p>
--	Bao bì, vỏ hộp sản phẩm bị hư hỏng, trầy xước do lỗi từ phía khách hàng.
-</p>
-            <p>
-- Sản phẩm không phải mua từ bên Hasaki.
-</p>
-            <p>
-<b>3.	Cách thức đổi trả :</b>
-</p>
-            <p>
-- 2GB nhận đổi trả sản phẩm cho khách hàng trong vòng 14 ngày , tính kể từ ngày khách hàng mua hoặc nhận được sản phẩm từ bên giao hàng.
-</p>
-            <p>
-- Khách hàng cần phải thông báo cho nhân viên 2GB lí do đổi trả và địa chỉ, số điện thoại liên lạc chính xác để 2GB có thể thực hiện quy trình đổi trả sản phẩm một cách nhanh chóng nhất theo yêu cầu của quý khách.
-</p>
-            <p>
-- 2GB quan tâm đến sự hài lòng của khách hàng và mong muốn nâng cao chất lượng dịch vụ, 2GB nhận đổi trả sản phẩm miễn phí cho khách hàng theo đúng quy định nêu trên . Khách ở khu vực Hồ Chí Minh , 2GB khuyến khích khách đến Showroom để nhân viên có thể check lại sản phẩm và khách có thể xem & lựa chọn đổi sản phẩm đúng theo ý của quý khách. Với các khách tỉnh, Quý khách có thể chuyển hàng qua bưu điện & Liên hệ với 2GB về sản phẩm đổi, mã bưu điện,… để 2GB có thể xử lý và gửi hàng lại sớm nhất khi nhận được sản phẩm.
-</p>
+                Sau đó, bạn vào trang <b>http://www.vnpost.vn/vi-vn/</b>, chọn mục <b>Tra cứu - Định vị</b> ở bên trái menu chính, dán mã vận đơn bạn vừa sao chép vào ô <b>Nhập mã bưu gửi</b>, lúc này bẹn sẽ được hiển thị đường đi của đơn hàng của bạn.
+            </p>
+            <img src="images/vnpost-scr.png" alt="vnpost-scr">
         </section>
         <aside class="update-promotion">
             <form action="" method="get">
