@@ -8,3 +8,16 @@
 @import 'faq.css';
 @import 'help-center.css';
 @import 'cart.css';
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    color: #e5dde9;
+    font-family: "Open sans", Arial;
+}
+main{
+    padding: 10px;
+}

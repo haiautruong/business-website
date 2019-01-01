@@ -47,19 +47,15 @@
                     <th id="col-total-cart">Thành tiền</th>
                     <th id="col-delete-cart">Xóa</th>
                 </tr>
-                <tr>
-                    <td>Đây là tên sản phẩm</td>
+                <tr class="a-row-item">
+                    <td><div class="product-cart clear-fix">
+                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-item-cart clear-fix" name="delete-cart">
+                        <p class="name-item-cart">Mặt nạ dưỡng da nha đam ahihi :3</p>
+                    </div></td>
                     <td>1000000</td>
                     <td>nút tăng giảm số lượng</td>
                     <td>100000000000</td>
-                    <td><a><img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart"></a></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a><img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart"></a></td>
+                    <td><img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart"></td>
                 </tr>
             </table>
         </section>
