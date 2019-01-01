@@ -159,4 +159,5 @@ main{
 }
 .btn-confirm:hover{
     color: #fff;
+    cursor: pointer;
 }
