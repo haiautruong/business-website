@@ -54,7 +54,7 @@
             </h4>
            <form action="signup.php?do=signup" method="post" class="info-signup">
                <label for="fullname-signup">Họ và tên</label>
-               <input type="fullname" name="fullname-signup">
+               <input type="text" name="fullname-signup">
                <label for="email-signup">Email</label>
                <input type="email" id="email-signup" name="email-signup">
                <label for="password-signup">Mật khẩu</label>

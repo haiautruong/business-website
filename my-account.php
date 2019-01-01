@@ -47,9 +47,72 @@
             </ul>
         </nav>
     </header>
+    
     <main class="main-content">
         <section class="container">
-            
+            <h2 class="hidden">Tài khoản của tôi</h2>
+            <div class="title">
+                <p>Tài khoản của tôi</p>
+                <hr>
+            </div>
+             <form action="" method="post" class="info-my-account">
+                <fieldset class="information-my-account">
+                    <legend>
+                        Thông tin tài khoản
+                    </legend>
+                    <p>
+                        <label for="fullname-my-account">Họ và tên</label>
+                        <input type="text" name="fullname-my-account">
+                    </p>
+                    <p>
+                        <label for="email-my-account">Địa chỉ email</label>
+                        <input type="email" name="email-my-account">
+                    </p>
+                    <p>
+                        <label for="phone-number-my-account">Số điện thoại</label>
+                        <input type="tel" name="phone-number-my-account">
+                    </p>
+                </fieldset>
+                <fieldset class="change-pw-my-account">
+                    <legend>
+                        Thay đổi mật khẩu
+                    </legend>
+                    <p>
+                        <label for="password-my-account">Mật khẩu hiện tại (bỏ trống nếu không đổi)</label>
+                        <input type="password" name="password-my-account">
+                    </p>
+                    <p>
+                        <label for="new-passowrd-my-account">Mật khẩu mới(bỏ trống nếu không đổi)</label>
+                        <input type="password" name="new-password-my-account">
+                    </p>
+                    <p>
+                        <label for="re-new-password-number-my-account">Nhập lại mật khẩu mới (bỏ trống nếu không đổi)</label>
+                        <input type="password" name="re-new-password-number-my-account">
+                    </p>
+                </fieldset>
+                <fieldset class="address-my-account">
+                    <legend>
+                        Địa chỉ nhận hàng
+                    </legend>
+                    <p>
+                        <label for="nation-my-account">Quốc gia</label>
+                        <input type="text" name="nation-my-account">
+                    </p>
+                    <p>
+                        <label for="country-my-account">Tỉnh/Thành phố</label>
+                        <input type="text" name="country-my-account">
+                    </p>
+                    <p>
+                        <label for="district-my-account">Quận/Huyện</label>
+                        <input type="text" name="district-my-account">
+                    </p>
+                    <p>
+                        <label for="address-my-account">Địa chỉ (Số nhà + Tên đường)</label>
+                        <input type="text" name="address-my-account">
+                    </p>
+                </fieldset>
+                <button class="btn-save main-content" name="btn-save">Lưu thay đổi</button>
+            </form>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">
