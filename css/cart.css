@@ -1,5 +1,9 @@
 .table-cart{
     text-align: center;
+    border: 0.5px solid #000;
+}
+.a-row-item:hover{
+    background-color: rgba(166, 196, 169, 0.28);
 }
 #col-delete-cart{
     width: 5%;
@@ -31,6 +35,9 @@
     text-align: left;
     padding-left: 30%;
     color: #000;
+}
+.name-item-cart:hover{
+    text-decoration-line: underline;
 }
 .list-product-cart{
     min-height: 300px;
