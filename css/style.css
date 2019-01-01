@@ -8,9 +8,7 @@
 @import 'faq.css';
 @import 'help-center.css';
 @import 'cart.css';
-<<<<<<< HEAD
-@import 'modify-cancel-order.css'
-=======
+@import 'modify-cancel-order.css';
 
 body{
     min-height: 100%;
@@ -25,4 +23,3 @@ main{
     padding: 10px;
     min-height: 400px;
 }
->>>>>>> aa41dfdb29c3103c8b1f0920b10b248cbaa93b59
