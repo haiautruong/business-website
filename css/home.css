@@ -27,6 +27,9 @@
     width: 100%;
     padding-bottom: 16px;
 }
+.list-product-home div:hover{
+    cursor: pointer;
+}
 .name-product-home{
     font-size: 14px;
     padding: 0 15px;

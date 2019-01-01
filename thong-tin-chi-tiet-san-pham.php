@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Giỏ hàng</title>
+    <title>Thông tin chi tiết sản phẩm</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
@@ -48,42 +48,8 @@
         </nav>
     </header>
     <main class="main-content">
+        <section class="container">
 
-        <section class="list-product-cart container">
-            <h2 class="hide">Giỏ hàng</h2>
-            <div class="title">
-                <p>Giỏ hàng</p>
-                <hr>
-            </div>
-            <table border="1" class="table-cart">
-                <tr class="col-name-cart">
-                    <th id="col-name-product-cart">Sản phẩm</th>
-                    <th id="col-price-cart">Giá</th>
-                    <th id="col-quantity-cart">Số lượng</th>
-                    <th id="col-total-cart">Thành tiền</th>
-                    <th id="col-delete-cart">Xóa</th>
-                </tr>
-                <tr class="a-row-item">
-                    <td>
-                        <div class="product-cart clear-fix">
-                            <a href="thong-tin-chi-tiet-san-pham.php">
-                                <img src="images/img-test.png" alt="anh-minh-hoa" class="img-item-cart clear-fix" name="delete-cart">
-                            </a>
-                            <a href="thong-tin-chi-tiet-san-pham.php">
-                                <p class="name-item-cart">Mặt nạ dưỡng da nha đam ahihi :3</p>
-                            </a>
-                        </div>
-                    </td>
-                    <td>1000000</td>
-                    <td>
-                        <input type="number" value="1" id="number-cart" min="1">
-                    </td>
-                    <td>100000000000</td>
-                    <td>
-                        <img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart">
-                    </td>
-                </tr>
-            </table>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">

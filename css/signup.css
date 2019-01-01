@@ -46,5 +46,6 @@
 .btn-signup:hover{
     color: #fff;
     font-size: 17.1px;
+    cursor: pointer;
 }
 

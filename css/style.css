@@ -10,7 +10,11 @@
 @import 'cart.css';
 @import 'modify-cancel-order.css';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+@import 'detail-info-product.css';
+>>>>>>> 414a4079186a593a17d7d470b331fcb885af3e5f
 
 body{
     min-height: 100%;
@@ -25,4 +29,6 @@ main{
     padding: 10px;
     min-height: 400px;
 }
->>>>>>> aa41dfdb29c3103c8b1f0920b10b248cbaa93b59
+.container{
+    min-height: 400px;
+}
