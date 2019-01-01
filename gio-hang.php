@@ -76,7 +76,7 @@
                     </td>
                     <td>1000000</td>
                     <td>
-                        <input type="number" value="1" id="number-cart">
+                        <input type="number" value="1" id="number-cart" min="1">
                     </td>
                     <td>100000000000</td>
                     <td>
