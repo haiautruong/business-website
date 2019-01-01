@@ -75,7 +75,9 @@
                         </div>
                     </td>
                     <td>1000000</td>
-                    <td>nút tăng giảm số lượng</td>
+                    <td>
+                        <input type="number" value="1" id="number-cart">
+                    </td>
                     <td>100000000000</td>
                     <td>
                         <img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart">

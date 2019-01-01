@@ -8,13 +8,13 @@
     width: 25%;
 }
 #col-price-cart{
-    width: 10%
+    width: 15%
 }
 #col-name-product-cart{
     width: 35%;
 }
 #col-quantity-cart{
-    width: 15%;
+    width: 10%;
 }
 .product-cart{
     padding: 10px;
@@ -35,4 +35,10 @@
 .list-product-cart{
     min-height: 300px;
     margin-top: 50px;
+}
+#number-cart{
+    width: 30px;
+    text-align: center;
+    height: 20px;
+    font-size: 17px;
 }
