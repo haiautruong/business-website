@@ -8,4 +8,21 @@
 @import 'faq.css';
 @import 'help-center.css';
 @import 'cart.css';
+<<<<<<< HEAD
 @import 'modify-cancel-order.css'
+=======
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    color: #e5dde9;
+    font-family: "Open sans", Arial;
+}
+main{
+    padding: 10px;
+    min-height: 400px;
+}
+>>>>>>> aa41dfdb29c3103c8b1f0920b10b248cbaa93b59

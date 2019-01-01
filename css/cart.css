@@ -2,17 +2,32 @@
     width: 5%;
 }
 #col-total-cart{
-    
+    width: 25%;
 }
 #col-price-cart{
-    
+    width: 10%
 }
 #col-name-product-cart{
-    
+    width: 35%;
 }
 #col-quantity-cart{
-    
+    width: 15%;
+}
+.product-cart{
+    padding: 10px;
 }
 .remove-icon-cart{
     width: 100%;
+    cursor: pointer;
+}
+.img-item-cart{
+    width: 25%;
+    float: left;
+}
+.name-item-cart{
+    margin: 0;
+}
+.list-product-cart{
+    min-height: 300px;
+    margin-top: 50px;
 }

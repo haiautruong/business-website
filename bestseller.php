@@ -54,7 +54,7 @@
     <main class="main-content">
     
         <section class="items-form">
-            <h2 class="hide">Trang điểm</h2>
+            <h2 class="hide">Bestseller</h2>
             <div class="title">
                 <p>Bestseller</p>
                 <hr>
