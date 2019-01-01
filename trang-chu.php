@@ -38,7 +38,7 @@
         </nav>
     </header>
     <main class="main-content">
-        <form action="" method="post" class="items-form">
+        <section class="items-form">
            <h2 class="hide">Deals đang diễn ra</h2>
             <fieldset class="deals">
                 <legend>Deals đang diễn ra</legend>
@@ -70,8 +70,8 @@
                     </li>
                 </ul>
             </fieldset>
-        </form>
-        <form action="" method="post" class="items-form">
+        </section>
+        <section class="items-form">
            <h2 class="hide">Trang điểm</h2>
             <fieldset>
                 <legend>Trang điểm</legend>
@@ -103,8 +103,8 @@
                     </li>
                 </ul>
             </fieldset>
-        </form>
-        <form action="" method="post" class="items-form">
+        </section>
+        <section class="items-form">
            <h2 class="hide">Chăm sóc da</h2>
             <fieldset>
                 <legend>Chăm sóc da</legend>
@@ -136,7 +136,7 @@
                     </li>
                 </ul>
             </fieldset>
-        </form>
+        </section>
 
         <aside class="update-promotion">
             <form action="" method="get">
