@@ -79,7 +79,6 @@
                 </li>
                 <li>
                     <div id="product2">
-    
                         <?php $row = mysqli_fetch_array($query);?>
                         <img src="<?php echo $row['image_link']; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
                         <p class="name-product-make-up"><?php echo $row['name']; ?></p>
@@ -108,11 +107,13 @@
             </ul>
             <ul class="list-product-make-up clear-fix">
                 <li>
+                <div>
                 <?php $row = mysqli_fetch_array($query);?>
                         <img src="<?php echo $row['image_link']; ?>" alt="anh-minh-hoa" class="img-illustrate-home">
                         <p class="name-product-make-up"><?php echo $row['name']; ?></p>
                         <p class="price-make-up"><?php echo utf8_encode($row['price']); ?></p>
                         <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
+                    </div>
                 </li>
                 <li>
                     <div>

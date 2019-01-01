@@ -38,7 +38,7 @@
         </nav>
     </header>
     <main class="main-content">
-        <form action="" method="post" class="items-form">
+        <section class="items-form">
             <h2 class="hide">Trang điểm</h2>
             <div class="title">
                 <p>Khuyến mãi</p>
@@ -120,8 +120,7 @@
                     </div>
                 </li>
             </ul>
-
-        </form>
+        </section>
         <section>
             <div class="pagination">
                 <a href="#" class="page active">1</a>

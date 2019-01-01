@@ -36,31 +36,35 @@
 .list-product-make-up {
     list-style: none;
     padding: 0;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 .list-product-make-up li {
     float: left;
-    width: 25%
+    width: 20%;
+    margin: 5px;
+    text-align: center;
 }
 .list-product-make-up img {
     width: 90%;
+    margin-left: 1px;
 }
 .list-product-make-up div {
     width: 100%;
     padding-bottom: 16px;
+    margin: 0 2px;
 }
 .name-product-make-up {
-    font-size: 14px;
-    padding: 0 15px;
+    font-size: 90%;
     margin: 0 auto;
     font-style: italic;
     text-align: center;
+    height: 60px;
 }
 .price-make-up {
     font-weight: 600;
     padding: 0 10px;
-    font-size: 17px;
+    font-size: 100%;
     text-align: center;
 }
 .list-product-make-up div:hover {
@@ -78,11 +82,11 @@
 .btn-add-cart-home {
     width: 65%;
     font-size: 13px;
-    height: 25px;
+    height: 100%;
     color: #e5dde9;
     background-color: #000;
     font-weight: 500;
-    margin-left: 15%;
+    margin:0 auto;
     border-radius: 5px/5px;
     border: 1px solid green
 }
