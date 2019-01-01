@@ -56,7 +56,7 @@
                     <a href="exchange-rule.php" target="_self"><img src="images/carton-box-icon.png" alt="exchange-rule"></a>
                 </div>
                 <div>
-                    <a href="#"><img src="images/order-icon.png" alt="modify-cancel-rule"></a>
+                    <a href="modify-cancel-order-guide.php" target="_self"><img src="images/order-icon.png" alt="modify-cancel-rule"></a>
                 </div>
                 <div>
                     <a href="#"><img src="images/user-icon.png" alt="account-guide"></a>

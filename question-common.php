@@ -47,51 +47,44 @@
         <section class="faq-plain-text">
             <ul class="faq-list">
                 <li>
-                    <div>
-                        <h3>
-                           Đăng ký thành viên 2GB như thế nào?
-                        </h3>
-                        <div>
-                            <p>Quý khách chưa tạo tài khoản vui lòng nhấn vào biểu tượng "<b>Tài khoản</b>" trên góc phải màn hình sau đó chọn "<b>Tạo tài khoản</b>" bên dưới ô "<b>Nhập mật khẩu</b>". Vui lòng điền đầy đủ các thông tin được yêu cầu và nhấn nút “<b>Tạo tài khoản</b>”. 
-                            </p>
-                        </div>
-                    </div>
+                    <details>
+                        <summary>
+                           <b>Đăng ký thành viên 2GB như thế nào?</b>
+                        </summary>
+                        <p>
+                            Quý khách chưa tạo tài khoản vui lòng nhấn vào biểu tượng "<b>Tài khoản</b>" trên góc phải màn hình sau đó chọn "<b>Tạo tài khoản</b>" bên dưới ô "<b>Nhập mật khẩu</b>". Vui lòng điền đầy đủ các thông tin được yêu cầu và nhấn nút “<b>Tạo tài khoản</b>”. 
+                        </p>
+                    </details>
                 </li>
                 <li>
-                    <div>
-                        <h3>
-                           Tại sao không thể đăng nhập vào tài khoản của tôi?
-                        </h3>
-                        <div>
-                            <p>
-                                Quý khách vui lòng kiểm tra kỹ về kiểu gõ hoặc phím Caps Look trong quá trình điền thông tin đăng nhập thành viên, trường hợp không thể đăng nhập thành công quý khách vui lòng chọn nút "<b>Quên mật khẩu</b>" bên dưới ô "<b>Nhập mật khẩu</b>". Vui lòng điền đầy đủ các thông tin được yêu cầu và nhấn nút "<b>Lưu thay đổi</b>". 
-                            </p>
-                        </div>
-                    </div>
+                    <details>
+                        <summary>
+                           <b>Tại sao không thể đăng nhập vào tài khoản của tôi?</b>
+                        </summary>
+                        <p>
+                            Quý khách vui lòng kiểm tra kỹ về kiểu gõ hoặc phím Caps Look trong quá trình điền thông tin đăng nhập thành viên, trường hợp không thể đăng nhập thành công quý khách vui lòng chọn nút "<b>Quên mật khẩu</b>" bên dưới ô "<b>Nhập mật khẩu</b>". Vui lòng điền đầy đủ các thông tin được yêu cầu và nhấn nút "<b>Lưu thay đổi</b>". 
+                        </p>
+                    </details>
                 </li>
                 <li>
-                    <div>
-                        <h3>
-                           Tôi muốn thay đổi thông tin tài khoản thành viên như thế nào?
-                        </h3>
-                        <div>
-                            <p>
-                                Để thay đổi thông tin cá nhân quý khách vui lòng đăng nhập vào tài khoản của mình, chọn biểu tượng "<b>Tài khoản của bạn</b>" rồi chọn vào nút "<b>Tài khoản</b>" để thay đổi thông tin. Vui lòng điền đầy đủ các thông tin bạn muốn thay đổi và bỏ trống những thông tin không cần thay đổi sau đó nhấn nút "<b>Lưu thay đổi</b>".
-                            </p>
-                        </div>
-                    </div>
+                    <details>
+                        <summary>
+                           <b>Tôi muốn thay đổi thông tin tài khoản thành viên như thế nào?</b>
+                        </summary>
+                        <p>
+                            Để thay đổi thông tin cá nhân quý khách vui lòng đăng nhập vào tài khoản của mình, chọn biểu tượng "<b>Tài khoản của bạn</b>" rồi chọn vào nút "<b>Tài khoản</b>" để thay đổi thông tin. Vui lòng điền đầy đủ các thông tin bạn muốn thay đổi và bỏ trống những thông tin không cần thay đổi sau đó nhấn nút "<b>Lưu thay đổi</b>".
+                        </p>
+                    </details>
                 </li>
                 <li>
-                    <div>
-                        <h3>
-                           Tôi có thể sử dụng chung tài khoản với người khác được không?
-                        </h3>
-                        <div>
-                            <p>
-                                Quý khách nên sử dụng tài khoản cá nhân để đảm bảo độ tin cậy cũng như quyền lợi của bản thân khi mua sắm. Việc sử dụng chung tài khoản có thể dẫn đến những sai sót mà người chịu ảnh hưởng trực tiếp chính là quý khách hàng.
-                            </p>
-                        </div>
-                    </div>
+                    <details>
+                        <summary>
+                           <b>Tôi có thể sử dụng chung tài khoản với người khác được không?</b>
+                        </summary>
+                        <p>
+                            Quý khách nên sử dụng tài khoản cá nhân để đảm bảo độ tin cậy cũng như quyền lợi của bản thân khi mua sắm. Việc sử dụng chung tài khoản có thể dẫn đến những sai sót mà người chịu ảnh hưởng trực tiếp chính là quý khách hàng.
+                        </p>
+                    </details>
                     <b>updated...</b>
                 </li>
             </ul>  

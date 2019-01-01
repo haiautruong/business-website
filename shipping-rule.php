@@ -45,7 +45,7 @@
             <hr>
         </div>
         <section class="faq-plain-text">
-            <p>
+            <p class="page-main-content">
                 <b>Chính sách giao hàng : </b>
             </p>
             <p>
