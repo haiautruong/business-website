@@ -49,17 +49,16 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hide">Tra cứu đơn hàng</h2>
-        <div class="title">
-            <p>Tra cứu đơn hàng</p>
-            <hr>
-        </div>
-        <section class="list-order-location container">
-            <table border="1" class="table-location">
+            <h2 class="hide">Tra cứu đơn hàng</h2>
+            <div class="title">
+                <p>Tra cứu đơn hàng</p>
+                <hr>
+            </div>
+            <table border="1" class="table-order-location">
                 <tr class="col-name-location">
-                    <th id="col-order-id-location">Mã đơn hàng</th>
+                    <th id="col-order-id-location">Mã đơn hàng/th>
                     <th id="col-date-location">Ngày đặt hàng</th>
-                    <th id="col-totally-paid-location">Tổng</th>
+                    <th id="col-total-paid-location">Tổng</th>
                     <th id="col-shipping-code-location">Mã vận đơn</th>
                 </tr>
                 <tr class="a-row-item-location">
@@ -69,7 +68,6 @@
                     <td>123456789</td>
                 </tr>
             </table>
-        </section>
         <aside class="update-promotion">
             <form action="" method="get">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
@@ -78,7 +76,7 @@
             </form>
         </aside>
     </main>
-   <footer class="footer clear-fix">
+    <footer class="footer clear-fix">
         <section class="f-contact">
             <h2 class="hiden"></h2>
             <ul class="clear-fix">

@@ -1,0 +1,19 @@
+.table-location{
+    text-align: center;
+    border: 0.5px solid #000;
+}
+.a-row-item-location:hover{
+    background-color: black;
+}
+#col-order-id-location{
+    width: 25%;
+}
+#col-date-location{
+    width: 25%;
+}
+#col-totally-paid-location{
+    width: 25%;
+}
+#col-shipping-code-location{
+    width: 25%;
+}
