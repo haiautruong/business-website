@@ -9,14 +9,9 @@
 @import 'help-center.css';
 @import 'cart.css';
 @import 'modify-cancel-order.css';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 @import 'detail-info-product.css';
 @import 'check-order.css';
 @import 'my-account.css';
->>>>>>> 414a4079186a593a17d7d470b331fcb885af3e5f
 
 body{
     min-height: 100%;
