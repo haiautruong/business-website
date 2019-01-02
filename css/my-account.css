@@ -1,6 +1,7 @@
 .info-my-account{
     margin: 0 auto;
     width: 86%;
+    
 }
 .info-my-account legend{
     font-style: oblique;
@@ -54,7 +55,8 @@
 }
 .address-my-account{
     margin: 0 20px;
-    padding-left: 70px
+    padding-left: 70px;
+    display: block;
 }
 .address-my-account input{
     width: 90%;

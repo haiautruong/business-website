@@ -56,7 +56,8 @@
                 <hr>
             </div>
              <form action="" method="post" class="info-my-account clear-fix">
-                <fieldset class="information-my-account clear-fix">
+               <section class="clear-fix">
+                   <fieldset class="information-my-account clear-fix">
                     <legend>
                         Thông tin tài khoản
                     </legend>
@@ -73,7 +74,7 @@
                         <input type="tel" name="phone-number-my-account">
                     </p>
                 </fieldset>
-                <fieldset class="change-pw-my-account clear-fix">
+                <fieldset class="change-pw-my-account">
                     <legend>
                         Thay đổi mật khẩu
                     </legend>
@@ -90,7 +91,9 @@
                         <input type="password" name="re-new-password-number-my-account">
                     </p>
                 </fieldset>
-                <fieldset class="address-my-account clear-fix">
+               </section>
+                <section>
+                    <fieldset class="address-my-account">
                     <legend>
                         Địa chỉ nhận hàng
                     </legend>
@@ -111,6 +114,7 @@
                         <input type="text" name="address-my-account">
                     </p>
                 </fieldset>
+                </section>
                 <button class="btn-save" name="btn-save">Lưu thay đổi</button>
             </form>
         </section>
