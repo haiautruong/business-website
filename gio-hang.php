@@ -84,6 +84,7 @@
                     </td>
                 </tr>
             </table>
+            <a href="thanh-toan.php"><input type="button" value="Thanh toán" class="btn-pay-cart"></a>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">

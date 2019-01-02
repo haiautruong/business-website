@@ -49,3 +49,19 @@
     height: 20px;
     font-size: 17px;
 }
+.btn-pay-cart {
+    background-color: #000;
+    color: #e5dde9;
+    font-size: 17px;
+    padding: 7px;
+    width: 130px;
+    border: 0.5px solid green;
+    margin-top: 40px;
+    float: right;
+}
+.btn-pay-cart:hover{
+    color: #fff;
+    border: 1px solid green;
+    cursor: pointer;
+
+}

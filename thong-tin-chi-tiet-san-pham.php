@@ -61,7 +61,7 @@
                         <p class="name-product-detail">Mặt nạ dưỡng da nha đam ahihi :3</p>
                         <div class="quantity-detail">
                            <p>Số lượng</p>
-                            <input type="number" value="1" id="number-cart" min="1">
+                            <input type="number" value="1" id="number-product" min="1">
                         </div>
                         <div class="cart-detail">
                             <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
