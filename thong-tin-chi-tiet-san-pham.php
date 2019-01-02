@@ -64,11 +64,21 @@
                             <input type="number" value="1" id="number-cart" min="1">
                         </div>
                         <div class="cart-detail">
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
+                            <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
                             <img src="images/cart-detail.png" alt="icon-cart">
                         </div>
                     </div>
                 </form>
+            </section>
+            <section class="detail-info-product">
+                <fieldset class="content">
+                    <legend>
+                        Thông tin chi tiết
+                    </legend>
+                    <div>
+                        Nội dung
+                    </div>
+                </fieldset>
             </section>
         </section>
         <aside class="update-promotion">
