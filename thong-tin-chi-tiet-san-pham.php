@@ -49,7 +49,27 @@
     </header>
     <main class="main-content">
         <section class="container">
-
+           <h2 class="hide">Thông tin sản phẩm</h2>
+            <div class="title">
+                <p>Thông tin sản phẩm</p>
+                <hr>
+            </div>
+            <section class="main-info-product">
+                <form action="" method="" class="clear-fix">
+                    <img src="images/img-test.png" alt="anh-minh-hoa-san-pham" class="img-product-detail">
+                    <div class="some-main-info-product">
+                        <p class="name-product-detail">Mặt nạ dưỡng da nha đam ahihi :3</p>
+                        <div class="quantity-detail">
+                           <p>Số lượng</p>
+                            <input type="number" value="1" id="number-cart" min="1">
+                        </div>
+                        <div class="cart-detail">
+                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
+                            <img src="images/cart-detail.png" alt="icon-cart">
+                        </div>
+                    </div>
+                </form>
+            </section>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">
