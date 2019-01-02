@@ -12,7 +12,7 @@
 @import 'detail-info-product.css';
 @import 'check-order.css';
 @import 'my-account.css';
-
+@import 'giao-hang.css';
 body{
     min-height: 100%;
     margin: 0;

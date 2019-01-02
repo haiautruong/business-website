@@ -47,7 +47,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <main class="main-content">
         <h2 class="hide">Tra cứu đơn hàng</h2>
         <div class="title">
@@ -55,57 +55,66 @@
             <hr>
         </div>
         <section class="container">
-            <section class="sign-up-login">
-                <p>Bạn đã có tài khoản ?</p>
-                <a href="login.php">Đăng nhập</a>
+            <section class="info-giao-hang">
+                <section class="sign-up-login clear-fix">
+                    <p>Bạn đã có tài khoản ?</p>
+                    <a href="login.php" id="to-login">Đăng nhập</a>
+                </section>
+                <form action="#" method="get" class="info-form-giao-hang clear-fix">
+                    <div class="lb-ip">
+                        <label for="email-giao-hang">Email</label>
+                        <input type="text" placeholder="Nhập email" id="email-giao-hang">
+                    </div>
+                    <div class="lb-ip">
+                        <label for="fullname-giao-hang">Họ và tên</label>
+                        <input type="text" placeholder="Nhập họ và tên" id="fullname-giao-hang">
+                    </div>
+                    <div class="lb-ip">
+                        <label for="address-giao-hang">Địa chỉ</label>
+                        <input type="text" placeholder="Nhập địa chỉ" id="address-giao-hang">
+                    </div>
+                    <div class="lb-ip">
+                        <label for="sdt-giao-hang">Số điện thoại</label>
+                        <input type="text" placeholder="Nhập số điện thoại nhận hàng" id="phone-giao-hang">
+                    </div>
+                    <div class="lb-ip">
+                        <label for="">Ghi chú</label>
+                        <input type="text" placeholder="Nhập ghi chú (nếu có)" maxlength="200" class="description">
+                    </div>
+                    <a href="gio-hang.php" class="come-back-cart">&lt;&lt; Quay lại giỏ hàng</a>
+                    <input type="button" value="Tiếp tục phương thức thanh toán" id="btn-continue">
+                </form>
             </section>
-            <form action="#" method="get" class="info-giao-hang">
-               <div class="lb-ip">
-                   <label for="email-giao-hang">Email</label>
-                    <input type="text" placeholder="Nhập email" name="email-giao-hang">
-               </div>
-                <div class="lb-ip">
-                    <label for="fullname-giao-hang">Họ và tên</label>
-                    <input type="text" placeholder="Nhập họ và tên" name="fullname-giao-hang">
-                </div>
-                <div class="lb-ip">
-                    <label for="address-giao-hang">Địa chỉ</label>
-                    <input type="text" placeholder="Nhập địa chỉ" name="address-giao-hang">
-                </div>
-                <div class="lb-ip">
-                    <label for="sdt-giao-hang">Số điện thoại</label>
-                    <input type="text" placeholder="Nhập số điện thoại nhận hàng">
-                </div>
-                <div class="lb-ip">
-                    <label for="">Ghi chú</label>
-                    <input type="text" placeholder="Nhập ghi chú (nếu có)" class="description">
-                </div>
-                <a href="gio-hang.php" class="come-back-cart">Quay lại giỏ hàng</a>
-                <input type="button" value="Tiếp tục phương thức thanh toán">
-            </form>
             <section class="don-hang">
-                <tabel>
+                <table border="1">
                     <tr>
                         <th>Đơn hàng</th>
                     </tr>
                     <tr>
-                        <div>
-                            <p class="name-product-giao-hang" id="sp1">Mặt nạ dưỡng da nha đam ahihi :3</p>
-                            <p class="txt-quantity">Số lượng:</p>
-                            <p id="quantity-gioa-hang-sp1">1</p>
-                        </div>
-                        <div class="price-giao-hang">500000</div>
+                        <td class="a-row clear-fix">
+                            <div>
+                                <p class="name-product-giao-hang first first" id="sp1">Mặt nạ dưỡng da nha đam ahihi :3</p>
+                                <p class="second">500000</p>
+                            </div>
+                            <div class="clear-fix">
+                                <p class="txt-quantity">Số lượng:</p>
+                                <p id="quantity-gioa-hang-sp1">1</p>
+                            </div>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <div>
-                            <p>Tạm tính</p>
-                            <p>500000</p>
-                        </div>
-                        <div>
-                            <p>Phí vận chuyển</p>
-                        </div>
+                        <td class="a-row">
+                            <div>
+                                <p  class="first">Tạm tính</p>
+                                <p class="second">500000</p>
+                            </div>
+                            <div class="clear-fix">
+                                <p>Phí vận chuyển</p>
+                            </div>
+                        </td>
                     </tr>
-                </tabel>
+                </table>
             </section>
         </section>
         <aside class="update-promotion">
@@ -116,7 +125,7 @@
             </form>
         </aside>
     </main>
-   <footer class="footer clear-fix">
+    <footer class="footer clear-fix">
         <section class="f-contact">
             <h2 class="hiden"></h2>
             <ul class="clear-fix">

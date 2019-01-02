@@ -1,6 +1,120 @@
 .info-giao-hang{
-    
+    border: 1px solid #000;
+    margin: 70px;
+    padding: 0 50px;
+    padding-bottom: 30px; 
 }
-.info-giao-hang > label{
-    display: block;
+#to-login {
+    color: green;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    top: 20px;
+}
+
+
+.sign-up-login p{
+    float: left;
+    margin: 20px 30px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.don-hang {
+    margin: 70px;
+    padding: 0 50px;
+    padding-bottom: 30px; 
+}
+
+.lb-ip>label{
+    font-size: 16px;
+    font-weight: 600;   
+}
+.lb-ip{
+    margin: 20px 0;
+}
+.info-form-giao-hang input{
+    height: 30px;
+    border-radius: 10px/10px;
+    border: 2px solid #000;
+    width: 60%;
+    font-size: 16px;
+    padding: 5px 13px
+}
+
+#email-giao-hang {
+    margin-left: 70px;
+}
+
+#fullname-giao-hang {
+    margin-left: 38px;
+}
+
+#address-giao-hang {
+    margin-left: 58px
+}
+
+#phone-giao-hang {
+    margin-left: 10px;
+}
+
+.description {
+    margin-left: 53px;
+    min-height: 50px;
+    word-break: break-all;
+}
+
+#btn-continue {
+    width: 270px;
+    font-size: 17px;
+    height: 42px;
+    border-radius: 0;
+    background-color: #000;
+    color: #e5dde9;
+    float: right;
+    margin-bottom: 20px;
+}
+#btn-continue:hover{
+    color: #fff;
+    height: 43px;
+}
+
+.a-row {
+    border: 1px solid #000;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+.first {
+    float: left;
+    font-size: 17px;
+    font-style: oblique;
+}
+.second{
+    float: left;
+    float: right;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.txt-quantity {
+    float: left;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+#quantity-gioa-hang-sp1 {
+    float: left;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a.come-back-cart {
+    color: green;
 }
