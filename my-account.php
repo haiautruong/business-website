@@ -55,8 +55,8 @@
                 <p>Tài khoản của tôi</p>
                 <hr>
             </div>
-             <form action="" method="post" class="info-my-account">
-                <fieldset class="information-my-account">
+             <form action="" method="post" class="info-my-account clear-fix">
+                <fieldset class="information-my-account clear-fix">
                     <legend>
                         Thông tin tài khoản
                     </legend>
@@ -73,24 +73,24 @@
                         <input type="tel" name="phone-number-my-account">
                     </p>
                 </fieldset>
-                <fieldset class="change-pw-my-account">
+                <fieldset class="change-pw-my-account clear-fix">
                     <legend>
                         Thay đổi mật khẩu
                     </legend>
                     <p>
-                        <label for="password-my-account">Mật khẩu hiện tại (bỏ trống nếu không đổi)</label>
+                        <label for="password-my-account">Mật khẩu hiện tại (Bỏ trống nếu không đổi)</label>
                         <input type="password" name="password-my-account">
                     </p>
                     <p>
-                        <label for="new-passowrd-my-account">Mật khẩu mới(bỏ trống nếu không đổi)</label>
+                        <label for="new-passowrd-my-account">Mật khẩu mới (Bỏ trống nếu không đổi)</label>
                         <input type="password" name="new-password-my-account">
                     </p>
                     <p>
-                        <label for="re-new-password-number-my-account">Nhập lại mật khẩu mới (bỏ trống nếu không đổi)</label>
+                        <label for="re-new-password-number-my-account">Nhập lại mật khẩu mới (Bỏ trống nếu không đổi)</label>
                         <input type="password" name="re-new-password-number-my-account">
                     </p>
                 </fieldset>
-                <fieldset class="address-my-account">
+                <fieldset class="address-my-account clear-fix">
                     <legend>
                         Địa chỉ nhận hàng
                     </legend>
@@ -111,7 +111,7 @@
                         <input type="text" name="address-my-account">
                     </p>
                 </fieldset>
-                <button class="btn-save main-content" name="btn-save">Lưu thay đổi</button>
+                <button class="btn-save" name="btn-save">Lưu thay đổi</button>
             </form>
         </section>
         <aside class="update-promotion">
