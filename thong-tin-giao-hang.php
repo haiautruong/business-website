@@ -82,7 +82,7 @@
                         <input type="text" placeholder="Nhập ghi chú (nếu có)" maxlength="200" class="description">
                     </div>
                     <a href="gio-hang.php" class="come-back-cart">&lt;&lt; Quay lại giỏ hàng</a>
-                    <input type="button" value="Tiếp tục phương thức thanh toán" id="btn-continue">
+                    <a href="thanh-toan.php"><input type="button" value="Tiếp tục phương thức thanh toán" id="btn-continue"></a>
                 </form>
             </section>
             <section class="don-hang">
