@@ -1,6 +1,20 @@
 <?php include_once("commons.php"); ?><!DOCTYPE html>
 <html lang="en">
+<?php
+    $status = 0;
+    if (isset($_GET['id']))
+    {
+        echo $_GET['id'];
+    }
+    else
+    {   
+        echo '<script type="text/javascript">
+        window.location.href = "notfound.php"</script>';
+        exit();
+    }
+    
 
+?>
 <head>
     <meta charset="UTF-8">
     <title>Thông tin chi tiết sản phẩm</title>
@@ -23,7 +37,7 @@
             <a href="gio-hang.php" target="_self">
                 <img src="images/cart_icon.png" alt="icon-cart">
             </a>
-            <a href="my-account.php" target="_self">
+            <a href="my-account.php" target="_self" id='btn-myacc'>
                 <img src="images/account_icon.png" alt="icon-account">
             </a>
             <a href="login.php" class="login-text" id="btn-login">Đăng nhập</a>
@@ -47,7 +61,7 @@
             </ul>
         </nav>
     </header>
-    <main class="main-content">
+    <main class="main-content" id='product-content'>
         <section class="container">
            <h2 class="hide">Thông tin sản phẩm</h2>
             <div class="title">
