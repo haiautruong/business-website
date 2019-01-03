@@ -56,7 +56,9 @@
         </nav>
     </header>
     <main class="main-content" >
-        <img src="images/notfound.png" alt="not_found">
+       <section class="container">
+           <img src="images/404.jpg" alt="not_found" style="width:100%">
+       </section>
     </main>
     <footer class="footer clear-fix">
         <section class="f-contact">
