@@ -56,13 +56,13 @@
                     <p>
                         Nếu đơn hàng mới của bạn được hiển thị là <b>Tạm giữ hàng</b>, điều này có nghĩa là đơn hàng của bạn vẫn chưa được giao cho bên vận chuyển. 
                     </p>
-                    <img src="#" alt="stored-scr">
+                    <img src="images/stored-scr.png" alt="stored-scr">
                 </li>
                 <li>
                     <p>
                         Nếu đơn hàng mới của bạn được hiển thị là <b></b>, điều này có nghĩa là đơn hàng của bạn vẫn chưa được giao cho bên vận chuyển. Lúc này, bạn vào mục <b>Tra cứu đơn hàng</b> ở góc dưới bên phải màn hình, bạn sẽ được hiển thị thông tin về đơn hàng đang được giao của bạn, bao gồm mã vận đơn. Bạn hãy sao chép mã này.
                     </p>
-                    <img src="#" alt="sent-scr">
+                    <img src="images/shipping-code-scr.png" alt="shipping-code-scr">
                 </li>
             </ul>
             <p>
