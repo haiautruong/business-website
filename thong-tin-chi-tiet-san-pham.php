@@ -83,25 +83,22 @@
                         <p class="name-product-detail">
                             <?php echo $row[ 'name'] ?>
                         </p>
-                        <div class="quantity-detail">
+                        <section class="container-total-detail">
+                            <p id="txt-total-detail">Giá: </p>
+                            <p id="total-detail"><?php echo $row[ 'price'] ?></p>
+                            <p class="price-sales"><span>(Tiết kiệm: </span><label id="sales">10%</label>)</p>
+                        </section>
+                        <div class="quantity-detail clear-fix">
+                           
                             <p>Số lượng</p>
                             <a href="">
-                                <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">
+                                <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre-detail">
                             </a>
-                            <label class="number-product-cart">1</label>
+                            <label class="number-product-detail">1</label>
                             <a href="">
-                                <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
+                                <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre-detail">
                             </a>
                         </div>
-                        <section class="clear-fix container-total-cart">
-                            <p id="txt-total-cart" class="clear-fix">Giá: </p>
-                            <p id="total-cart" class="clear-fix"><?php echo $row[ 'price'] ?></p>
-                        </section>
-                        <section class="clear-fix container-btn-pay">
-                            <a href="thong-tin-giao-hang.php">
-                                <input type="button" value="Thanh toán" class="btn-pay-cart">
-                            </a>
-                        </section>
                         <div class="cart-detail">
                             <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
                             <img src="images/cart-detail.png" alt="icon-cart">
