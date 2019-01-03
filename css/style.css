@@ -13,6 +13,7 @@
 @import 'check-order.css';
 @import 'my-account.css';
 @import 'giao-hang.css';
+@import 'thanh-toan.css';
 body{
     min-height: 100%;
     margin: 0;
