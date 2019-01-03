@@ -61,6 +61,21 @@
 .address-my-account input{
     width: 90%;
 }
+.table-order{
+    border-collapse: collapse;
+}
+.order-history{
+    margin: 0 auto;
+    width: 80%;
+}
+.order-history legend{
+    font-style: oblique;
+    font-size: 14px;
+    font-weight: 400;
+}
+th, td{
+    text-align: center;
+}
 
 
 

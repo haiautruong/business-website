@@ -118,6 +118,38 @@
                 <button class="btn-save" name="btn-save">Lưu thay đổi</button>
             </form>
         </section>
+        <fieldset class="order-history">
+            <legend>
+                Lịch sử mua hàng
+            </legend>
+            <table border="1" class="table-order">
+                <tr class="col-name-order">
+                    <th id="col-order-id-my-account">Mã đơn hàng</th>
+                    <th id="col-date-my-account">Ngày đặt hàng</th>
+                    <th id="col-status-my-account">Tình trạng</th>
+                    <th id="col-totally-paid-my-account">Tổng</th>
+                    <th id="col-view-my-account">Thao tác</th>
+                </tr>
+                <tr class="a-row-item-my-account">
+                    <td><a href="#" target="_self">#2</a></td>
+                    <td>02/01/2019</td>
+                    <td>Đã gửi hàng</td>
+                    <td>258000</td>
+                    <td>
+                        <button class="btn-view">Xem chi tiết</button>
+                    </td>
+                </tr>
+                <tr class="another-row-item-my-account">
+                    <td><a href="#" target="_self">#1</a></td>
+                    <td>31/12/2018</td>
+                    <td>Đã phát hàng</td>
+                    <td>209000</td>
+                    <td>
+                        <button class="btn-view">Xem chi tiết</button>
+                    </td>
+                </tr>
+            </table>
+            </fieldset>
         <aside class="update-promotion">
             <form action="" method="get">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
