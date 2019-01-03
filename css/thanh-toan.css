@@ -1,0 +1,69 @@
+#btn-end-don-hang {
+    width: 180px;
+    font-size: 17px;
+    height: 42px;
+    border-radius: 0;
+    background-color: #000;
+    color: #e5dde9;
+    float: right;
+    margin-bottom: 20px;
+}
+#btn-end-don-hang:hover {
+    color: #fff;
+    height: 43px;
+}
+.phuong-thuc ul, pay ul {
+    list-style: none;
+}
+.lbl-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.lbl-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px dashed #000;
+}
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.lbl-contrainer input:checked ~ .checkmark{
+    background-color: darkgreen;
+}
+.lbl-container:hover input ~ .checkmark{
+    background-color: lightgreen;
+}
+.lbl-contrainer input:checked ~ .checkmark::after{
+    display: block;
+}
+.lbl-container .checkmark::after{
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}

@@ -54,7 +54,92 @@
                 <p>Thanh toán</p>
                 <hr>
             </div>
-            
+            <section class="phuong-thuc">
+                <section class="van-chuyen">
+                    <h3>Phương thức vận chuyển</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                <lable class="lbl-container">Giao hàng thông thường
+                                    <input type="radio" checked="checked">
+                                    <span class="checkmark"></span>
+                                </lable>
+                                <p class="price-ship">30,000</p>
+                            </li>
+                            <li>
+                                <label class="lbl-container">
+                                    Giao hàng ưu đãi (Đăng nhập để nhận ưu đãi)
+                                    <input type="radio" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p class="price-ship">20,000</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="pay">
+                    <h3>Phương thức thanh toán</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                <label class="lbl-container">
+                                    Thanh toán khi nhận hàng (COD) tại TP Hồ Chí Minh
+                                    <input type="radio" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="lbl-container">
+                                    Thanh toán khi nhận hàng (COD) tại các tỉnh khác
+                                    <input type="radio" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </li>
+                            <li>
+                                <label class="lbl-container">
+                                    Chuyển khoản trước qua ngân hàng
+                                    <input type="radio" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="thong-tin-giao-hang.php" class="come-back-cart">&lt;&lt; Quay lại thông tin giao hàng</a>
+                    <input type="button" value="Hoàn tất đơn hàng" id="btn-end-don-hang">
+                </section>
+            </section>
+            <section class="don-hang">
+                <table border="1">
+                    <tr>
+                        <th>Đơn hàng</th>
+                    </tr>
+                    <tr>
+                        <td class="a-row clear-fix">
+                            <div>
+                                <p class="name-product-giao-hang first first" id="sp1">Mặt nạ dưỡng da nha đam ahihi :3</p>
+                                <p class="second">500000</p>
+                            </div>
+                            <div class="clear-fix">
+                                <p class="txt-quantity">Số lượng:</p>
+                                <p id="quantity-gioa-hang-sp1">1</p>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="a-row">
+                            <div>
+                                <p class="first">Tạm tính</p>
+                                <p class="second">500000</p>
+                            </div>
+                            <div class="clear-fix">
+                                <p>Phí vận chuyển</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">
@@ -109,5 +194,4 @@
         </section>
     </footer>
 </body>
-
 </html>
