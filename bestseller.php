@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
 <?php
-    include('config.php');
-    $sql = "SELECT name, price, image_link, id FROM t_product GROUP BY DISCOUNT desc LIMIT 10";
+    $page = 1;
+    $max_item = 20;
+    if (isset($_GET['page']))
+    {
+        $page = $_GET['page'];
+    }
+    $page_range = ($page-1)*$max_item;
+    $sql = "SELECT COUNT(*) FROM t_product ORDER BY DISCOUNT";
+    $query = mysqli_query($conn, $sql);
+    $count_row = mysqli_fetch_array($query);
+    $count_page = ceil($count_row[0]/$max_item);
+
+    $sql = "SELECT name, price, image_link, id FROM t_product ORDER BY DISCOUNT desc LIMIT ".strval($page_range+1).",".strval($page_range+$max_item+1)."";
     $query = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($query);
-    
 ?>
 
 
@@ -61,47 +71,64 @@
                         <option value="dec">Giá giảm dần</option>
                 </select>
             </div>
-            <ul class="list-product-make-up clear-fix">
             <?php
-            for ($i=0; $i < 4; $i++) { 
-                $row = mysqli_fetch_array($query);
-                echo '<li>';
-                echo    '<div>';
-                echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
-                echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
-                echo        '<p class="price-make-up">'.$row["price"].'</p>';
-                echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
-                echo    '</div>';
-                echo'</li>';
-            }
-            ?>
-            </ul>
-            <ul class="list-product-make-up clear-fix">
-                <?php
-                for ($i=0; $i < 4; $i++) { 
-                    $row = mysqli_fetch_array($query);
-                    echo '<li>';
-                    echo    '<div>';
-                    echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
-                    echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
-                    echo        '<p class="price-make-up">'.$row["price"].'</p>';
-                    echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
-                    echo    '</div>';
-                    echo'</li>';
+                for ($j=0; $j < 5; $j++)
+                {
+                    echo '<ul class="list-product-make-up clear-fix">';
+                    for ($i=0; $i < 4; $i++) { 
+                        $row = mysqli_fetch_array($query);
+                        if ($row)
+                        {
+                            echo '<li>';
+                            echo    '<div>';
+                            echo        '<a href="thong-tin-chi-tiet-san-pham.php?id='.strval($row['id']).'">';
+                            echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
+                            echo        '</a>';
+                            echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
+                            echo        '<p class="price-make-up">'.$row["price"].'</p>';
+                            echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
+                            echo    '</div>';
+                            echo'</li>';
+                        }
+                        
+                    }
+                    echo '</ul>';
                 }
-                ?>
-            </ul>
+            ?>
+            
 
         </section>
         <section>
             <div class="pagination">
-                <a href="#" class="page active">1</a>
-                <a href="#" class="page">2</a>
-                <a href="#" class="page">3</a>
-                <a href="#" class="page">4</a>
-                <a href="#" class="page">5</a>
-                <a href="#" class="page">6</a>
-                <a href="#" class="page">7</a>
+                <?php
+                    $up = 2;
+                    $down = 2;
+                    while ($page-$down <= 0)
+                    {
+                        $down--;
+                        $up++;
+                    }
+
+                    while ($page+$up > $count_page)
+                    {
+                        $down++;
+                        $up--;
+                    }
+
+                    for ($i=$page-$down; $i <= $page+$up; $i++) { 
+                        if ($page == $i)
+                        {
+                            echo '<a href="bestseller.php?page='.$i.'" class="page active">'.$i.'</a>';
+                        }
+                        else
+                        {
+                            echo '<a href="bestseller.php?page='.$i.'" class="page">'.$i.'</a>';
+                        }
+                    }
+                    
+                    
+                    
+                ?>
             </div>
         </section>
          <aside class="update-promotion">

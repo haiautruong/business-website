@@ -8,6 +8,12 @@
         $sql = "SELECT name, price, image_link, id, details FROM t_product WHERE id=".$_GET['id'];
         $query = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($query);
+        if (!$row)
+        {
+            echo '<script type="text/javascript">
+            window.location.href = "notfound.php"</script>';
+            exit();
+        }
     }
     else
     {   
