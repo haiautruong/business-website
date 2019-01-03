@@ -56,7 +56,6 @@
     padding: 7px;
     width: 130px;
     border: 0.5px solid green;
-    margin-top: 40px;
     float: right;
 }
 .btn-pay-cart:hover{
@@ -64,4 +63,29 @@
     border: 1px solid green;
     cursor: pointer;
 
+}
+
+#txt-total-cart {
+    font-size: 17px;
+    font-weight: 600;
+    float: left;
+    margin-right: 25px;
+}
+
+.container-total-cart {
+    margin-left: 650px;
+}
+
+#total-cart {
+    float: right;
+    margin-right: 80px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+
+.container-btn-pay {
+    float: right;
+    
 }
