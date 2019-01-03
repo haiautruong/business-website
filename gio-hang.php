@@ -49,7 +49,7 @@
     </header>
     <main class="main-content">
 
-        <section class="list-product-cart container">
+        <section class="list-product-cart container clear-fix">
             <h2 class="hide">Giỏ hàng</h2>
             <div class="title">
                 <p>Giỏ hàng</p>
@@ -83,8 +83,34 @@
                         <img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart">
                     </td>
                 </tr>
+                <tr class="a-row-item">
+                    <td>
+                        <div class="product-cart clear-fix">
+                            <a href="thong-tin-chi-tiet-san-pham.php">
+                                <img src="images/img-test.png" alt="anh-minh-hoa" class="img-item-cart clear-fix" name="delete-cart">
+                            </a>
+                            <a href="thong-tin-chi-tiet-san-pham.php">
+                                <p class="name-item-cart">Mặt nạ dưỡng da nha đam ahihi :3</p>
+                            </a>
+                        </div>
+                    </td>
+                    <td>1000000</td>
+                    <td>
+                        <input type="number" value="1" id="number-cart" min="1">
+                    </td>
+                    <td>100000000000</td>
+                    <td>
+                        <img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart">
+                    </td>
+                </tr>
             </table>
-            <a href="thong-tin-giao-hang.php"><input type="button" value="Thanh toán" class="btn-pay-cart"></a>
+            <section class="clear-fix container-total-cart">
+                <p id="txt-total-cart" class="clear-fix">Tổng tiền:</p>
+                <p id="total-cart" class="clear-fix">500000000</p>
+            </section>
+            <section class="clear-fix container-btn-pay">
+                <a href="thong-tin-giao-hang.php"><input type="button" value="Thanh toán" class="btn-pay-cart"></a>
+            </section>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">
