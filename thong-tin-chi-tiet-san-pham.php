@@ -65,6 +65,7 @@
                         <p class="name-product-detail">
                             <?php echo $row[ 'name'] ?>
                         </p>
+
                         <section class="container-total-detail">
                             <p id="txt-total-detail">Giá:</p>
                             <p id="total-detail">
@@ -72,6 +73,27 @@
                             </p>
                             <p class="price-sales"><span>(Tiết kiệm: </span>
                                 <label id="sales">10%</label>)</p>
+                        <p class="before-discount-price">
+                            Giá chưa khuyến mãi : 
+                        </p>
+                        <div class="quantity-detail">
+                            <p>Số lượng</p>
+                            <a href="">
+                                <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">
+                            </a>
+                            <label class="number-product-cart">1</label>
+                            <a href="">
+                                <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
+                            </a>
+                        </div>
+                        <section class="container-total-cart clear-fix">
+                            <p id="txt-total-cart" class="clear-fix">Giá :</p>
+                            <p id="total-cart" class="clear-fix">500000</p>
+                        </section>
+                        <section class="clear-fix container-btn-pay">
+                            <a href="thong-tin-giao-hang.php">
+                                <input type="button" value="Thanh toán" class="btn-pay-cart">
+                            </a>
                         </section>
                         <div class="quantity-detail clear-fix">
                             <p class="before-discount-price">
@@ -105,6 +127,7 @@
                                 </div>
                             </section>
                         </div>
+                        </section>
                     </div>
                 </form>
 

@@ -61,13 +61,13 @@
                 <p>
                     a. Gõ tên sản phẩm vào thanh tìm kiếm.
                 </p>
-                <img src="#"alt="search-bar-scr">
+                <img src="images/searcg-bar-scr.png"alt="search-bar-scr">
             </div>
             <div>
                 <p>
                     b. Tìm theo danh mục sản phẩm hoặc có thể tham khảo qua những sản phẩm hot, những sản phẩm đang bán chạy nhất tại 2GB
                 </p>
-                <img src="#"alt="nav-scr">
+                <img src="images/menu-bar-scr.png"alt="nav-scr">
             </div>
             <p>
                 <b>2. Đặt hàng : </b>
@@ -76,7 +76,7 @@
                 <p>
                     Khi đã tìm được sản phẩm mong muốn, quý khách vui lòng bấm vào <b>Thêm vào giỏ hàng</b> nếu quý khách không cần biết thêm thông tin sản phẩm. Trường hợp quý khách muốn tìm hiểu thêm thông tin sản phẩm, quý khách vui lòng bấm vào hình ảnh sản phẩm hoặc tên sản phẩm đẻ vào được trang thông tin sản phẩm.
                 </p>
-                <img src="#" alt="product-box-scr">
+                <img src="images/product-box-scr.png" alt="product-box-scr">
             </div>
             <p>
                 Để thêm sản phẩm vào giỏ hàng, quý khách vui lòng thực hiện theo các bước sau:
@@ -86,7 +86,7 @@
                    a. Quý khách sẽ bấm vào ô <b>Thêm vào giỏ hàng</b> và tiếp tục tìm kiếm sản phẩm khác. Trường hợp quý khách chỉ muốn mua sản phẩm vừa chọn, quý khách vui lòng bấm vào biểu tượng <b>Giỏ hàng</b> ở góc phải phía trên màn hình.  
                 </p>
                 <img src="#" alt="add-to-cart-button-src">
-                <img src="#" alt="cart-src">
+                <img src="images/cart-scr.png" alt="cart-src">
             </div>
             <div>
                 <p>
@@ -103,7 +103,7 @@
             <p>
                 Để được giảm phí giao hàng cho lần mua hiện tại đối với khách hàng đã đăng kí tài khoản thành công và đã từng mua hàng ở 2GB, chúng tôi khuyến khích khách hàng <b>Đăng nhập</b>.
             </p>
-            <img src="#" alt="login-signup-scr">
+            <img src="images/login-scr.png" alt="login-signup-scr">
             <p>
                 Quý khách có thể đặt hàng mà không cần đăng nhập nhưng quý khách lưu ý phải điền đầy đủ và chính xác về thông tin nhận hàng, đặc biệt là địa chỉ mail và số điện thoại để 2GB xác nhận đơn hàng.
             </p>
