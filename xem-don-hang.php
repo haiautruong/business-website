@@ -48,8 +48,45 @@
             <p class="page-main-content">
                 <b>THÔNG TIN ĐƠN HÀNG</b>
             </p>
-            <table>
+            <table class="order-detail">
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Thành tiền</th>
+                </tr>
+                <tr>
+                    <td>Son kem lì Black Rouge</td>
+                    <td>139000</td>
+                </tr>
+                <tr>
+                    <td>Nước tẩy trang Bioderma</td>
+                    <td>450000</td>
+                </tr>
+                <tr>
+                    <td><b>Tổng cộng:</b></td>
+                    <td class="total-payment">589000</td>
+                </tr>
+                <tr>
+                    <td><b>Giao nhận hàng:</b></td>
+                    <td>Miễn phí giao hàng</td>
+                </tr>
+                <tr>
+                    <td><b>Phương thức thanh toán:</b></td>
+                    <td>Chuyển khoản ngân hàng</td>
+                </tr>
+                <tr>
+                    <td><b>TỔNG CỘNG:</b></td>
+                    <td class="total-payment">589000</td>
+                </tr>
             </table>
+            <p>
+                <b>THÔNG TIN NHẬN HÀNG VÀ THANH TOÁN</b>
+            </p>
+            <P>Phan Thanh Bảo Châu</P>
+            <p>31 Trần Bình Trọng</p>
+            <p>Quận 5</p>
+            <p>Thành phố Hồ Chí Minh</p>
+            <p>0707565362</p>
+            <p>joo291998@gmail.com</p>
         </section>
         <aside class="update-promotion">
             <form action="" method="get">
