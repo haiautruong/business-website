@@ -1,4 +1,4 @@
-<?php include_once("commons.php"); ?>
+<?php include_once( "commons.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -21,9 +21,8 @@
         window.location.href = "notfound.php"</script>';
         exit();
     }
-    
+?>    
 
-?>
 <head>
     <meta charset="UTF-8">
     <title>Thông tin chi tiết sản phẩm</title>
@@ -72,7 +71,7 @@
     </header>
     <main class="main-content" id='product-content'>
         <section class="container">
-           <h2 class="hide">Thông tin sản phẩm</h2>
+            <h2 class="hide">Thông tin sản phẩm</h2>
             <div class="title">
                 <p>Thông tin sản phẩm</p>
                 <hr>
@@ -81,11 +80,28 @@
                 <form action="" method="" class="clear-fix">
                     <img src="<?php echo $row['image_link']?>" alt="anh-minh-hoa-san-pham" class="img-product-detail">
                     <div class="some-main-info-product">
-                        <p class="name-product-detail"><?php echo $row['name'] ?></p>
+                        <p class="name-product-detail">
+                            <?php echo $row[ 'name'] ?>
+                        </p>
                         <div class="quantity-detail">
-                           <p>Số lượng</p>
-                            <input type="number" value="1" id="number-product" min="1">
+                            <p>Số lượng</p>
+                            <a href="">
+                                <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">
+                            </a>
+                            <label class="number-product-cart">1</label>
+                            <a href="">
+                                <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
+                            </a>
                         </div>
+                        <section class="clear-fix container-total-cart">
+                            <p id="txt-total-cart" class="clear-fix">Giá: </p>
+                            <p id="total-cart" class="clear-fix">500000000</p>
+                        </section>
+                        <section class="clear-fix container-btn-pay">
+                            <a href="thong-tin-giao-hang.php">
+                                <input type="button" value="Thanh toán" class="btn-pay-cart">
+                            </a>
+                        </section>
                         <div class="cart-detail">
                             <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
                             <img src="images/cart-detail.png" alt="icon-cart">
@@ -99,7 +115,7 @@
                         Thông tin chi tiết
                     </legend>
                     <div>
-                        <?php echo $row['details'] ?>
+                        <?php echo $row[ 'details'] ?>
                     </div>
                 </fieldset>
             </section>
@@ -158,4 +174,5 @@
     </footer>
 </body>
 
-</html><?php include_once("login-logout-process.php"); ?>
+</html>
+<?php include_once( "login-logout-process.php"); ?>

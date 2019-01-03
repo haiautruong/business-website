@@ -76,7 +76,13 @@
                     </td>
                     <td>1000000</td>
                     <td>
-                        <input type="number" value="1" id="number-cart" min="1">
+                        <a href="">
+                            <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">
+                        </a>
+                        <label class="number-product-cart">1</label>
+                        <a href="">
+                            <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
+                        </a>
                     </td>
                     <td>100000000000</td>
                     <td>
@@ -96,7 +102,13 @@
                     </td>
                     <td>1000000</td>
                     <td>
-                        <input type="number" value="1" id="number-cart" min="1">
+                        <a href="">
+                            <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">
+                        </a>
+                        <label class="number-product-cart">1</label>
+                        <a href="">
+                            <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
+                        </a>
                     </td>
                     <td>100000000000</td>
                     <td>
