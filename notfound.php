@@ -58,6 +58,7 @@
     <main class="main-content" >
        <section class="container">
            <img src="images/404.jpg" alt="not_found" style="width:100%">
+           <a href="trang-chu.php"><img src="images/404-back-ground-btn.png" alt="btn-go-home" class="btn-go-home-not-found"></a>
        </section>
     </main>
     <footer class="footer clear-fix">
