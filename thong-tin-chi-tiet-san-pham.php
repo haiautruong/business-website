@@ -84,7 +84,7 @@
                             <?php echo $row[ 'name'] ?>
                         </p>
                         <p class="before-discount-price">
-                            
+                            Giá chưa khuyến mãi : 
                         </p>
                         <div class="quantity-detail">
                             <p>Số lượng</p>
@@ -96,15 +96,9 @@
                                 <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
                             </a>
                         </div>
-<<<<<<< HEAD
                         <section class="container-total-cart clear-fix">
                             <p id="txt-total-cart" class="clear-fix">Giá :</p>
                             <p id="total-cart" class="clear-fix">500000</p>
-=======
-                        <section class="clear-fix container-total-cart">
-                            <p id="txt-total-cart" class="clear-fix">Giá: </p>
-                            <p id="total-cart" class="clear-fix"><?php echo $row[ 'price'] ?></p>
->>>>>>> d9d6c27d3958fcebb5fd397c9f7ff3b034a65361
                         </section>
                         <section class="clear-fix container-btn-pay">
                             <a href="thong-tin-giao-hang.php">

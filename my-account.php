@@ -98,19 +98,7 @@
                         Địa chỉ nhận hàng
                     </legend>
                     <p>
-                        <label for="nation-my-account">Quốc gia</label>
-                        <input type="text" name="nation-my-account">
-                    </p>
-                    <p>
-                        <label for="country-my-account">Tỉnh/Thành phố</label>
-                        <input type="text" name="country-my-account">
-                    </p>
-                    <p>
-                        <label for="district-my-account">Quận/Huyện</label>
-                        <input type="text" name="district-my-account">
-                    </p>
-                    <p>
-                        <label for="address-my-account">Địa chỉ (Số nhà + Tên đường)</label>
+                        <label for="address-my-account">Địa chỉ</label>
                         <input type="text" name="address-my-account">
                     </p>
                 </fieldset>
