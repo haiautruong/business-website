@@ -83,6 +83,9 @@
                         <p class="name-product-detail">
                             <?php echo $row[ 'name'] ?>
                         </p>
+                        <p class="before-discount-price">
+                            
+                        </p>
                         <div class="quantity-detail">
                             <p>Số lượng</p>
                             <a href="">
@@ -93,9 +96,9 @@
                                 <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
                             </a>
                         </div>
-                        <section class="clear-fix container-total-cart">
-                            <p id="txt-total-cart" class="clear-fix">Giá: </p>
-                            <p id="total-cart" class="clear-fix">500000000</p>
+                        <section class="container-total-cart clear-fix">
+                            <p id="txt-total-cart" class="clear-fix">Giá :</p>
+                            <p id="total-cart" class="clear-fix">500000</p>
                         </section>
                         <section class="clear-fix container-btn-pay">
                             <a href="thong-tin-giao-hang.php">

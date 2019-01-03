@@ -1,9 +1,8 @@
-<?php include_once("commons.php"); ?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Tra cứu đơn hàng</title>
+    <title>2GB - Hướng dẫn thay đổi hoặc hủy đơn hàng</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
@@ -12,25 +11,16 @@
     <header class="clear-fix">
         <section class="header">
             <h1 class="hide">Search bar</h1>
-            <a href="https://www.facebook.com/groups/1866521173441261/" target="_blank">
-                <img src="images/fb_icon(2).png" alt="icon-facebook">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/ins_icon.png" alt="icon-insatagram">
-            </a>
+            <a href="https://www.facebook.com/groups/1866521173441261/" target="_blank" ><img src="images/fb_icon(2).png" alt="icon-facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/ins_icon.png" alt="icon-insatagram"></a>
             <input class="search-bar" placeholder="Search">
 
-            <a href="gio-hang.php" target="_self">
-                <img src="images/cart_icon.png" alt="icon-cart">
-            </a>
-            <a href="my-account.php" target="_self">
-                <img src="images/account_icon.png" alt="icon-account">
-            </a>
+            <a href="gio-hang.php" target="_self"><img src="images/cart_icon.png" alt="icon-cart"></a>
+            <a href="my-account.php" target="_self" id="btn-myacc" ><img src="images/account_icon.png" alt="icon-account"></a>
             <a href="login.php" class="login-text" id="btn-login">Đăng nhập</a>
         </section>
         <section class="shop-name">
-            <p><a href="trang-chu.php">2GB Shop</a>
-            </p>
+            <p><a href="trang-chu.php">2GB Shop</a></p>
         </section>
         <nav class="nav-bar">
             <ul class="clear-fix">
@@ -49,25 +39,16 @@
     </header>
     
     <main class="main-content">
-        <h2 class="hide">Tra cứu đơn hàng</h2>
+        <h2 class="hidden">Chi tiết đơn hàng</h2>
         <div class="title">
-            <p>Tra cứu đơn hàng</p>
+            <p>Đơn hàng <b>#1</b> đã được đặt lúc <b>Tháng Mười Hai 31, 2018</b> và hiện tại là <b>Tạm giữ</b></p>
             <hr>
         </div>
-        <section class="list-order-location container">
-            <table border="1" class="table-location">
-                <tr class="col-name-location">
-                    <th id="col-order-id-location">Mã đơn hàng</th>
-                    <th id="col-date-location">Ngày đặt hàng</th>
-                    <th id="col-totally-paid-location">Tổng</th>
-                    <th id="col-shipping-code-location">Mã vận đơn</th>
-                </tr>
-                <tr class="a-row-item-location">
-                    <td><a href="#" target="_self">#2</a></td>
-                    <td>02/01/2019</td>
-                    <td>258000</td>
-                    <td>123456789</td>
-                </tr>
+        <section class="faq-plain-text">
+            <p class="page-main-content">
+                <b>THÔNG TIN ĐƠN HÀNG</b>
+            </p>
+            <table>
             </table>
         </section>
         <aside class="update-promotion">
@@ -78,7 +59,8 @@
             </form>
         </aside>
     </main>
-   <footer class="footer clear-fix">
+    
+    <footer class="footer clear-fix">
         <section class="f-contact">
             <h2 class="hiden"></h2>
             <ul class="clear-fix">
@@ -124,4 +106,5 @@
     </footer>
 </body>
 
-</html><?php include_once("login-logout-process.php"); ?>
+</html>
+<?php include_once("login-logout-process.php"); ?>
