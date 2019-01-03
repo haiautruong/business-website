@@ -8,7 +8,8 @@ $password = "";
  
 $dbname = "datawebsales";
  
-$conn = mysqli_connect($servername,$username,$password,$dbname);
+global $conn;
+$conn = new mysqli($servername,$username,$password,$dbname);
 
 
  
