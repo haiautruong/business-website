@@ -117,4 +117,8 @@ table {
 
 a.come-back-cart {
     color: green;
+    font-size: 15px;
+    font-style: oblique;
+    position: relative;
+    top: 20px;
 }

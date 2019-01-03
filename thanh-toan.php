@@ -55,21 +55,21 @@
                 <hr>
             </div>
             <section class="phuong-thuc">
-                <section class="van-chuyen">
+                <section class="van-chuyen clear-fix">
                     <h3>Phương thức vận chuyển</h3>
                     <div>
                         <ul>
-                            <li>
-                                <lable class="lbl-container">Giao hàng thông thường
-                                    <input type="radio" checked="checked">
+                            <li class="clear-fix">
+                                <label class="lbl-container clear-fix">Giao hàng thông thường
+                                    <input type="radio" name="radio" checked="checked">
                                     <span class="checkmark"></span>
-                                </lable>
+                                </label>
                                 <p class="price-ship">30,000</p>
                             </li>
-                            <li>
+                            <li class="clear-fix">
                                 <label class="lbl-container">
                                     Giao hàng ưu đãi (Đăng nhập để nhận ưu đãi)
-                                    <input type="radio" checked="checked">
+                                    <input type="radio" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
                                 <p class="price-ship">20,000</p>
@@ -77,29 +77,29 @@
                         </ul>
                     </div>
                 </section>
-                <section class="pay">
+                <section class="pay clear-fix">
                     <h3>Phương thức thanh toán</h3>
                     <div>
                         <ul>
                             <li>
-                                <label class="lbl-container">
+                                <label class="lbl-container-pay">
                                     Thanh toán khi nhận hàng (COD) tại TP Hồ Chí Minh
-                                    <input type="radio" checked="checked">
+                                    <input type="radio" name="radio" checked="checked">
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
                             <li>
-                                <label class="lbl-container">
+                                <label class="lbl-container-pay">
                                     Thanh toán khi nhận hàng (COD) tại các tỉnh khác
-                                    <input type="radio" checked="checked">
+                                    <input type="radio" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
 
                             </li>
                             <li>
-                                <label class="lbl-container">
+                                <label class="lbl-container-pay">
                                     Chuyển khoản trước qua ngân hàng
-                                    <input type="radio" checked="checked">
+                                    <input type="radio" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
