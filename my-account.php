@@ -136,16 +136,16 @@
                     <td>Đã gửi hàng</td>
                     <td>258000</td>
                     <td>
-                        <button class="btn-view">Xem chi tiết</button>
+                        <a href="xem-don-hang.php" target="_self"><button class="btn-view">Xem chi tiết</button></a>
                     </td>
                 </tr>
                 <tr class="another-row-item-my-account">
                     <td><a href="#" target="_self">#1</a></td>
                     <td>31/12/2018</td>
                     <td>Đã phát hàng</td>
-                    <td>209000</td>
+                    <td>589000</td>
                     <td>
-                        <button class="btn-view">Xem chi tiết</button>
+                       <a href="xem-don-hang.php" target="_self"><button class="btn-view">Xem chi tiết</button></a>
                     </td>
                 </tr>
             </table>

@@ -2,7 +2,10 @@
     text-align: center;
     border: 0.5px solid #000;
 }
-.a-row-item-location:hover{
+.a-row-item-location a:hover{
+    background-color: black;
+}
+.a-row-item-location a:visited{
     background-color: black;
 }
 #col-order-id-location{
@@ -16,4 +19,7 @@
 }
 #col-shipping-code-location{
     width: 25%;
+}
+tr:hover{
+    background-color: red;
 }

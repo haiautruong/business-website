@@ -15,6 +15,7 @@
 @import 'giao-hang.css';
 @import 'thanh-toan.css';
 @import 'not-found.css';
+@import 'view-order.css';
 body{
     min-height: 100%;
     margin: 0;

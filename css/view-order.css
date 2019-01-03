@@ -1,0 +1,9 @@
+.order-detail th.left{
+    width: 70%;
+}
+.order-detail th.right{
+    width: 30%;
+}
+.order-detail th.left{
+    text-align: left;
+}

@@ -1,27 +1,9 @@
 <?php include_once( "commons.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php
-    $status = 0;
-    if (isset($_GET['id']))
-    {
-        $sql = "SELECT name, price, image_link, id, details FROM t_product WHERE id=".$_GET['id'];
-        $query = mysqli_query($conn, $sql);
-        $row = mysqli_fetch_array($query);
-        if (!$row)
-        {
-            echo '<script type="text/javascript">
-            window.location.href = "notfound.php"</script>';
-            exit();
-        }
-    }
-    else
-    {   
-        echo '<script type="text/javascript">
-        window.location.href = "notfound.php"</script>';
-        exit();
-    }
-?>    
+<?php $status=0 ; if (isset($_GET[ 'id'])) { $sql="SELECT name, price, image_link, id, details FROM t_product WHERE id=" .$_GET[ 'id']; $query=m ysqli_query($conn, $sql); $row=m ysqli_fetch_array($query); if (!$row) { echo '<script type="text/javascript">
+            window.location.href = "notfound.php"</script>'; exit(); } } else { echo '<script type="text/javascript">
+        window.location.href = "notfound.php"</script>'; exit(); } ?>
 
 <head>
     <meta charset="UTF-8">
@@ -84,27 +66,48 @@
                             <?php echo $row[ 'name'] ?>
                         </p>
                         <section class="container-total-detail">
-                            <p id="txt-total-detail">Giá: </p>
-                            <p id="total-detail"><?php echo $row[ 'price'] ?></p>
-                            <p class="price-sales"><span>(Tiết kiệm: </span><label id="sales">10%</label>)</p>
+                            <p id="txt-total-detail">Giá:</p>
+                            <p id="total-detail">
+                                <?php echo $row[ 'price'] ?>
+                            </p>
+                            <p class="price-sales"><span>(Tiết kiệm: </span>
+                                <label id="sales">10%</label>)</p>
                         </section>
                         <div class="quantity-detail clear-fix">
-                           
-                            <p>Số lượng</p>
-                            <a href="">
-                                <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre-detail">
-                            </a>
-                            <label class="number-product-detail">1</label>
-                            <a href="">
-                                <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre-detail">
-                            </a>
-                        </div>
-                        <div class="cart-detail">
-                            <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
-                            <img src="images/cart-detail.png" alt="icon-cart">
+                            <p class="before-discount-price">
+
+                            </p>
+                            <div class="quantity-detail">
+                                <p>Số lượng</p>
+                                <a href="">
+                                    <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre-detail">
+                                </a>
+                                <label class="number-product-detail">1</label>
+                                <a href="">
+                                    <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre-detail">
+                                </a>
+                            </div>
+                            <section class="container-total-cart clear-fix">
+                                <p id="txt-total-cart" class="clear-fix">Giá :</p>
+                                <p id="total-cart" class="clear-fix">500000</p>
+
+                                <section class="clear-fix container-total-cart">
+                                    <p id="txt-total-cart" class="clear-fix">Giá:</p>
+                                </section>
+                                <section class="clear-fix container-btn-pay">
+                                    <a href="thong-tin-giao-hang.php">
+                                        <input type="button" value="Thanh toán" class="btn-pay-cart">
+                                    </a>
+                                </section>
+                                <div class="cart-detail">
+                                    <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
+                                    <img src="images/cart-detail.png" alt="icon-cart">
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </form>
+
             </section>
             <section class="detail-info-product">
                 <fieldset class="content">
