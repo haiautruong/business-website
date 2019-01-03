@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php include_once("commons.php"); ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,8 @@
             <input class="search-bar" placeholder="Search">
 
             <a href="gio-hang.php" target="_self"><img src="images/cart_icon.png" alt="icon-cart"></a>
-            <a href="my-account.php" target="_self"><img src="images/account_icon.png" alt="icon-account"></a>
-            <a href="login.php" class="login-text">Đăng nhập</a>
+            <a href="my-account.php" target="_self" id="btn-myacc" ><img src="images/account_icon.png" alt="icon-account"></a>
+            <a href="login.php" class="login-text" id="btn-login">Đăng nhập</a>
         </section>
         <section class="shop-name">
             <p><a href="trang-chu.php">2GB Shop</a></p>
@@ -148,3 +148,4 @@
 </body>
 
 </html>
+<?php include_once("login-logout-process.php"); ?>

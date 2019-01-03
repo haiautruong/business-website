@@ -1,0 +1,1 @@
+<?php include_once("commons.php"); ?><?php include_once("login-logout-process.php"); ?>
