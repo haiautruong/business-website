@@ -56,57 +56,64 @@
             </div>
             <section class="phuong-thuc">
                 <section class="van-chuyen clear-fix">
-                    <h3>Phương thức vận chuyển</h3>
-                    <div>
-                        <ul>
-                            <li class="clear-fix">
-                                <label class="lbl-container clear-fix">Giao hàng thông thường
-                                    <input type="radio" name="radio" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <p class="price-ship">30,000</p>
-                            </li>
-                            <li class="clear-fix">
-                                <label class="lbl-container">
-                                    Giao hàng ưu đãi (Đăng nhập để nhận ưu đãi)
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <p class="price-ship">20,000</p>
-                            </li>
-                        </ul>
-                    </div>
+                    <form action="" method="get">
+                        <h3>Phương thức vận chuyển</h3>
+                        <div>
+                            <ul>
+                                <li class="clear-fix">
+                                    <label class="lbl-container clear-fix">Giao hàng thông thường
+                                        <input type="radio" name="radio" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p class="price-ship">30,000</p>
+                                </li>
+                                <li class="clear-fix">
+                                    <label class="lbl-container">
+                                        Giao hàng ưu đãi (Đăng nhập để nhận ưu đãi)
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p class="price-ship">20,000</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
                 </section>
                 <section class="pay clear-fix">
-                    <h3>Phương thức thanh toán</h3>
-                    <div>
-                        <ul>
-                            <li>
-                                <label class="lbl-container-pay">
-                                    Thanh toán khi nhận hàng (COD) tại TP Hồ Chí Minh
-                                    <input type="radio" name="radio" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="lbl-container-pay">
-                                    Thanh toán khi nhận hàng (COD) tại các tỉnh khác
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
+                    <form action="" method="get">
+                        <h3>Phương thức thanh toán</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <label class="lbl-container-pay">
+                                        Thanh toán khi nhận hàng (COD) tại TP Hồ Chí Minh
+                                        <input type="radio" name="radio" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="lbl-container-pay">
+                                        Thanh toán khi nhận hàng (COD) tại các tỉnh khác
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
 
-                            </li>
-                            <li>
-                                <label class="lbl-container-pay">
-                                    Chuyển khoản trước qua ngân hàng
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="thong-tin-giao-hang.php" class="come-back-cart">&lt;&lt; Quay lại thông tin giao hàng</a>
-                    <input type="button" value="Hoàn tất đơn hàng" id="btn-end-don-hang">
+                                </li>
+                                <li>
+                                    <label class="lbl-container-pay">
+                                        Chuyển khoản trước qua ngân hàng
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                    <form action="" method="get">
+                        <a href="thong-tin-giao-hang.php" class="come-back-cart">&lt;&lt; Quay lại thông tin giao hàng</a>
+                        <input type="button" value="Hoàn tất đơn hàng" id="btn-end-don-hang">
+                    </form>
+
                 </section>
             </section>
             <section class="don-hang">
@@ -194,4 +201,5 @@
         </section>
     </footer>
 </body>
+
 </html>
