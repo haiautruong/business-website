@@ -95,7 +95,7 @@
                         </div>
                         <section class="clear-fix container-total-cart">
                             <p id="txt-total-cart" class="clear-fix">Giá: </p>
-                            <p id="total-cart" class="clear-fix">500000000</p>
+                            <p id="total-cart" class="clear-fix"><?php echo $row[ 'price'] ?></p>
                         </section>
                         <section class="clear-fix container-btn-pay">
                             <a href="thong-tin-giao-hang.php">

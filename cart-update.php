@@ -26,6 +26,11 @@
                     if ($item['id'] == $product_id)
                     {
                         $exist = true;
+                        if ($_SESSION['cart'][$key]['qty'] + $product_qty < 1)
+                        {
+                            header('Location:'.$return_url);
+                            exit();
+                        }
                         $_SESSION['cart'][$key]['qty'] += $product_qty;
                     }
                 }
@@ -61,6 +66,11 @@
     // Xóa hết sản phẩm
     if (isset($_GET['type']) && $_GET['type'] == 'rmall')
     {
+        $return_url = base64_decode($_GET['url']);
         unset($_SESSION['cart']);
     }
+
+    
+    header('Location:'.$return_url);
+    exit();
 ?>

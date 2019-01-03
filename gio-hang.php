@@ -63,62 +63,47 @@
                     <th id="col-total-cart">Thành tiền</th>
                     <th id="col-delete-cart">Xóa</th>
                 </tr>
-                <tr class="a-row-item">
-                    <td>
-                        <div class="product-cart clear-fix">
-                            <a href="thong-tin-chi-tiet-san-pham.php">
-                                <img src="images/img-test.png" alt="anh-minh-hoa" class="img-item-cart clear-fix" name="delete-cart">
-                            </a>
-                            <a href="thong-tin-chi-tiet-san-pham.php">
-                                <p class="name-item-cart">Mặt nạ dưỡng da nha đam ahihi :3</p>
-                            </a>
-                        </div>
-                    </td>
-                    <td>1000000</td>
-                    <td>
-                        <a href="">
-                            <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">
-                        </a>
-                        <label class="number-product-cart">1</label>
-                        <a href="">
-                            <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
-                        </a>
-                    </td>
-                    <td>100000000000</td>
-                    <td>
-                        <img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart">
-                    </td>
-                </tr>
-                <tr class="a-row-item">
-                    <td>
-                        <div class="product-cart clear-fix">
-                            <a href="thong-tin-chi-tiet-san-pham.php">
-                                <img src="images/img-test.png" alt="anh-minh-hoa" class="img-item-cart clear-fix" name="delete-cart">
-                            </a>
-                            <a href="thong-tin-chi-tiet-san-pham.php">
-                                <p class="name-item-cart">Mặt nạ dưỡng da nha đam ahihi :3</p>
-                            </a>
-                        </div>
-                    </td>
-                    <td>1000000</td>
-                    <td>
-                        <a href="">
-                            <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">
-                        </a>
-                        <label class="number-product-cart">1</label>
-                        <a href="">
-                            <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">
-                        </a>
-                    </td>
-                    <td>100000000000</td>
-                    <td>
-                        <img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart">
-                    </td>
-                </tr>
+                <?php
+                    $total_price = 0;
+                    // url trang hiện tại
+                    $current_url = base64_encode($_SERVER['REQUEST_URI']);
+                    foreach ($_SESSION['cart'] as $key => $value) {
+                        echo '<tr class="a-row-item">';
+                        echo '<td>';
+                        echo '<div class="product-cart clear-fix">';
+                        echo '<a href="thong-tin-chi-tiet-san-pham.php">';
+                        echo '<img src="'.$value['image_link'].'" alt="anh-minh-hoa" class="img-item-cart clear-fix" name="delete-cart">';
+                        echo '</a>';
+                        echo '<a href="thong-tin-chi-tiet-san-pham.php?id='.$value['id'].'">';
+                        echo '<p class="name-item-cart">'.$value['name'].'</p>';
+                        echo '</a>';
+                        echo '</div>';
+                        echo '</td>';
+                        echo '<td>'.$value['price'].'</td>';
+                        echo '<td>';
+                        echo '<a href="cart-update.php?type=add&qty=-1&id='.$value['id'].'&url='.$current_url.'">';
+                        echo '<img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre">';
+                        echo '</a>';
+                        echo '<label class="number-product-cart">'.$value['qty'].'</label>';
+                        echo '<a href="cart-update.php?type=add&qty=1&id='.$value['id'].'&url='.$current_url.'">';
+                        echo '<img src="images/arrow-up.PNG" alt="increase" class="arrow-decre">';
+                        echo '</a>';
+                        echo '</td>';
+                        echo '<td>'.$value['price']*$value['qty'].'</td>';
+                        echo '<td>';
+                        echo '<a href="cart-update.php?type=rm&id='.$value['id'].'&url='.$current_url.'">';
+                        echo '<img src="images/remove-icon.png" alt="icon-remove" class="remove-icon-cart">';
+                        echo '</a>';
+                        echo '</td>';
+                        echo '</tr>';
+                        $total_price += $value['price']*$value['qty'];
+                    }
+                    
+                ?>
             </table>
             <section class="clear-fix container-total-cart">
                 <p id="txt-total-cart" class="clear-fix">Tổng tiền:</p>
-                <p id="total-cart" class="clear-fix">500000000</p>
+                <p id="total-cart" class="clear-fix"><?php echo $total_price; ?></p>
             </section>
             <section class="clear-fix container-btn-pay">
                 <a href="thong-tin-giao-hang.php"><input type="button" value="Thanh toán" class="btn-pay-cart"></a>

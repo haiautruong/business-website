@@ -22,6 +22,9 @@
     $sql = "SELECT name, price, image_link, id FROM t_product ORDER BY DISCOUNT desc LIMIT ".strval($page_range+1).",".strval($page_range+$max_item+1)."";
     $query = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($query);
+
+    // url trang hiện tại
+    $current_url = base64_encode($_SERVER['REQUEST_URI']);
 ?>
 
 
@@ -86,7 +89,9 @@
                             echo        '</a>';
                             echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
                             echo        '<p class="price-make-up">'.$row["price"].'</p>';
+                            echo        '<a href="cart-update.php?type=add&qty=1&id='.strval($row['id']).'&url='.$current_url.'">';
                             echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
+                            echo        '</a>';
                             echo    '</div>';
                             echo'</li>';
                         }
