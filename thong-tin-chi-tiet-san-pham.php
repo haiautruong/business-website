@@ -1,10 +1,13 @@
-<?php include_once("commons.php"); ?><!DOCTYPE html>
+<?php include_once("commons.php"); ?>
+<!DOCTYPE html>
 <html lang="en">
 <?php
     $status = 0;
     if (isset($_GET['id']))
     {
-        echo $_GET['id'];
+        $sql = "SELECT name, price, image_link, id, details FROM t_product WHERE id=".$_GET['id'];
+        $query = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($query);
     }
     else
     {   
@@ -70,9 +73,9 @@
             </div>
             <section class="main-info-product">
                 <form action="" method="" class="clear-fix">
-                    <img src="images/img-test.png" alt="anh-minh-hoa-san-pham" class="img-product-detail">
+                    <img src="<?php echo $row['image_link']?>" alt="anh-minh-hoa-san-pham" class="img-product-detail">
                     <div class="some-main-info-product">
-                        <p class="name-product-detail">Mặt nạ dưỡng da nha đam ahihi :3</p>
+                        <p class="name-product-detail"><?php echo $row['name'] ?></p>
                         <div class="quantity-detail">
                            <p>Số lượng</p>
                             <input type="number" value="1" id="number-product" min="1">
@@ -90,7 +93,7 @@
                         Thông tin chi tiết
                     </legend>
                     <div>
-                        Nội dung
+                        <?php echo $row['details'] ?>
                     </div>
                 </fieldset>
             </section>
