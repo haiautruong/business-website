@@ -1,4 +1,5 @@
-<?php include_once("commons.php"); ?><!DOCTYPE html>
+<?php include_once("session.php"); ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -122,10 +123,9 @@
 <?php
     function dangki()
     {
-        $re = "";
-        //Nhúng file config với database
+        // Kết nối sql
         include_once('config.php');
-
+        $re = "";
         //Lấy dữ liệu từ file dangky.php
         $password   = addslashes($_POST['password-signup']);
         $repassword = addslashes($_POST['repass-signup']);

@@ -45,5 +45,22 @@
 
     // Xóa sản phẩm
 
+    if (isset($_GET['type']) && $_GET['type'] == 'rm')
+    {
+        $product_id = $_GET['id'];
+        $return_url = base64_decode($_GET['url']);
+        foreach ($_SESSION['cart'] as $key => $item) 
+        {
+            if ($item['id'] == $product_id)
+            {
+                unset($_SESSION['cart'][$key]);
+            }
+        }
+    }
+
     // Xóa hết sản phẩm
+    if (isset($_GET['type']) && $_GET['type'] == 'rmall')
+    {
+        unset($_SESSION['cart']);
+    }
 ?>
