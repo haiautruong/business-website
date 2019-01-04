@@ -14,7 +14,7 @@
     width: 50%;
 }
 .cart-detail>img{
-    width: 15%;
+    width: 9%;
     margin-left: 30px;
     position: relative;
     top: 22px;
@@ -117,7 +117,6 @@
 
 .quantity-detail {
     margin-top: 20px
-
 }
 .arrow-incre{
     width: 20px;
