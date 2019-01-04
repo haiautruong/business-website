@@ -10,7 +10,7 @@
         $product_qty = $_GET['qty'];
         $return_url = base64_decode($_GET['url']);
         $re = $conn->query('SELECT name, price, image_link FROM t_product WHERE id='.$product_id);
-        if ($re)
+        if (mysqli_num_rows($re)>=1)
         {
             $obj_data = $re->fetch_object(); 
             $new_item = array(array('name'=>$obj_data->name,

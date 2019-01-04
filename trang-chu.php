@@ -6,9 +6,12 @@
     <title>Trang chủ</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
-    <?php include_once("commons.php"); ?>
-    
 </head>
+<?php
+// url trang hiện tại
+$current_url = base64_encode($_SERVER['REQUEST_URI']);
+?>
+
 
 <body>
     <header class="clear-fix">
@@ -44,99 +47,102 @@
         <section class="items-form">
            <h2 class="hide">Deals đang diễn ra</h2>
             <fieldset class="deals">
+            <?php
+                $sql = "SELECT name, price, image_link, id FROM t_product ORDER BY RAND() LIMIT 3";
+                $query = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_array($query);
+            ?>
                 <legend>Deals đang diễn ra</legend>
                 <p class="see-more-home clear-fix"><a href="khuyen-mai.php" class="see-more-home">Xem thêm &gt;&gt;</a></p>
                 <ul class="list-product-home clear-fix">
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
+                    <?php
+                    for ($i=0; $i < 3; $i++) { 
+                        if ($row)
+                        {
+                            echo '<li>';
+                            echo    '<div>';
+                            echo        '<a href="thong-tin-chi-tiet-san-pham.php?id='.strval($row['id']).'">';
+                            echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
+                            echo        '</a>';
+                            echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
+                            echo        '<p class="price-make-up">'.number_format($row["price"],0).'</p>';
+                            echo        '<a href="cart-update.php?type=add&qty=1&id='.strval($row['id']).'&url='.$current_url.'">';
+                            echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
+                            echo        '</a>';
+                            echo    '</div>';
+                            echo'</li>';
+                        }
+                        $row = mysqli_fetch_array($query);
+                    }
+                    ?>
                 </ul>
             </fieldset>
         </section>
         <section class="items-form">
            <h2 class="hide">Trang điểm</h2>
             <fieldset>
+            <?php
+                $sql = "SELECT name, price, image_link, id FROM t_product WHERE catalog_id=2 ORDER BY RAND() LIMIT 3";
+                $query = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_array($query);
+            ?>
                 <legend>Trang điểm</legend>
                 <p class="clear-fix"><a href="trang-diem.php" class="see-more-home">Xem thêm &gt;&gt;</a></p>
                 <ul class="list-product-home clear-fix">
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
+                <?php
+                    for ($i=0; $i < 3; $i++) { 
+                        if ($row)
+                        {
+                            echo '<li>';
+                            echo    '<div>';
+                            echo        '<a href="thong-tin-chi-tiet-san-pham.php?id='.strval($row['id']).'">';
+                            echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
+                            echo        '</a>';
+                            echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
+                            echo        '<p class="price-make-up">'.number_format($row["price"],0).'</p>';
+                            echo        '<a href="cart-update.php?type=add&qty=1&id='.strval($row['id']).'&url='.$current_url.'">';
+                            echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
+                            echo        '</a>';
+                            echo    '</div>';
+                            echo'</li>';
+                        }
+                        $row = mysqli_fetch_array($query);
+                    }
+                    ?>
                 </ul>
             </fieldset>
         </section>
         <section class="items-form">
            <h2 class="hide">Chăm sóc da</h2>
             <fieldset>
+            <?php
+                $sql = "SELECT name, price, image_link, id FROM t_product WHERE catalog_id=3 ORDER BY RAND() LIMIT 3";
+                $query = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_array($query);
+            ?>
                 <legend>Chăm sóc da</legend>
                 <p class="see-more-home clear-fix"><a href="cham-soc-da.php" class="see-more-home">Xem thêm &gt;&gt;</a></p>
                 <ul class="list-product-home clear-fix">
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                            <p class="name-product-home">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                            <p class="price-home">500,000</p>
-                            <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                        </div>
-                    </li>
+                <?php
+                    for ($i=0; $i < 3; $i++) { 
+                        if ($row)
+                        {
+                            echo '<li>';
+                            echo    '<div>';
+                            echo        '<a href="thong-tin-chi-tiet-san-pham.php?id='.strval($row['id']).'">';
+                            echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
+                            echo        '</a>';
+                            echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
+                            echo        '<p class="price-make-up">'.number_format($row["price"],0).'</p>';
+                            echo        '<a href="cart-update.php?type=add&qty=1&id='.strval($row['id']).'&url='.$current_url.'">';
+                            echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
+                            echo        '</a>';
+                            echo    '</div>';
+                            echo'</li>';
+                        }
+                        $row = mysqli_fetch_array($query);
+                    }
+                    ?>
                 </ul>
             </fieldset>
         </section>

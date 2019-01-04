@@ -63,7 +63,7 @@
                             <ul>
                                 <li class="clear-fix">
                                     <label class="lbl-container clear-fix">Giao hàng thông thường
-                                        <input type="radio" name="radio" checked="checked">
+                                        <input type="radio" name="radio" onclick="return false;" checked="checked">
                                         <span class="checkmark"></span>
                                     </label>
                                     <p class="price-ship">30,000</p>
@@ -71,7 +71,7 @@
                                 <li class="clear-fix">
                                     <label class="lbl-container">
                                         Giao hàng ưu đãi (Đăng nhập để nhận ưu đãi)
-                                        <input type="radio" name="radio">
+                                        <input type="radio" name="radio" onclick="return false;">
                                         <span class="checkmark"></span>
                                     </label>
                                     <p class="price-ship">20,000</p>
@@ -122,19 +122,25 @@
                     <tr>
                         <th>Đơn hàng</th>
                     </tr>
-                    <tr>
-                        <td class="a-row clear-fix">
-                            <div>
-                                <p class="name-product-giao-hang first first" id="sp1">Mặt nạ dưỡng da nha đam ahihi :3</p>
-                                <p class="second">500000</p>
-                            </div>
-                            <div class="clear-fix">
-                                <p class="txt-quantity">Số lượng:</p>
-                                <p id="quantity-gioa-hang-sp1">1</p>
-                            </div>
-
-                        </td>
-                    </tr>
+                    <?php
+                    $total_price = 50000;
+                    foreach ($_SESSION['cart'] as $key => $value) {
+                        echo '<tr>';
+                        echo '<td class="a-row clear-fix">';
+                        echo '<div>';
+                        echo '<p class="name-product-giao-hang first first" id="sp1">'.$value['name'].'</p>';
+                        echo '<p class="second">'.number_format($value['price']*$value['qty'], 0).'</p>';
+                        echo '</div>';
+                        echo '<div class="clear-fix">';
+                        echo '<p class="txt-quantity">Số lượng:</p>';
+                        echo '<p id="quantity-gioa-hang-sp1">'.$value['qty'].'</p>';
+                        echo '</div>';
+                        echo '';
+                        echo '</td>';
+                        echo '</tr>';
+                        $total_price += $value['price']*$value['qty'];
+                    }
+                    ?>
                     <tr>
                         <td class="a-row">
                             <div>

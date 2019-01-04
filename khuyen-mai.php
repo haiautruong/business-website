@@ -37,102 +37,103 @@
             </ul>
         </nav>
     </header>
+    <?php
+    $page = 1;
+    $max_item = 20;
+    if (isset($_GET['page']))
+    {
+        $page = $_GET['page'];
+    }
+    $page_range = ($page-1)*$max_item;
+    $sql = "SELECT COUNT(*) FROM t_product ORDER BY DISCOUNT";
+    $query = mysqli_query($conn, $sql);
+    $count_row = mysqli_fetch_array($query);
+    $count_page = ceil($count_row[0]/$max_item);
+
+    $sql = "SELECT name, price, image_link, id FROM t_product ORDER BY DISCOUNT desc LIMIT ".strval($page_range+1).",".strval($page_range+$max_item)."";
+    $query = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($query);
+
+    // url trang hiện tại
+    $current_url = base64_encode($_SERVER['REQUEST_URI']);
+    ?>
     <main class="main-content">
         <section class="items-form">
-            <h2 class="hide">Trang điểm</h2>
+            <h2 class="hide">Bestseller</h2>
             <div class="title">
-                <p>Khuyến mãi</p>
+                <p>Bestseller</p>
                 <hr>
             </div>
             <div class="filter">
                 <p>Sắp xếp theo</p>
                 <select name="sort-mk" id="sort-make-up">
-                    <option value="">Mới nhất</option>
-                    <option value="">Giá tăng dần</option>
-                    <option value="">Giá giảm dần</option>
+                        <option value="new">Mới nhất</option>
+                        <option value="inc">Giá tăng dần</option>
+                        <option value="dec">Giá giảm dần</option>
                 </select>
             </div>
-            <ul class="list-product-make-up clear-fix">
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-            </ul>
-            <ul class="list-product-make-up clear-fix">
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="images/img-test.png" alt="anh-minh-hoa" class="img-illustrate-home">
-                        <p class="name-product-make-up">Mặt nạ dưỡng ẩm nha đam ahihi :3</p>
-                        <p class="price-make-up">500,000</p>
-                        <button class="btn-add-cart-home" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                </li>
-            </ul>
+            <?php
+                for ($j=0; $j < 5; $j++)
+                {
+                    echo '<ul class="list-product-make-up clear-fix">';
+                    for ($i=0; $i < 4; $i++) { 
+                        if ($row)
+                        {
+                            echo '<li>';
+                            echo    '<div>';
+                            echo        '<a href="thong-tin-chi-tiet-san-pham.php?id='.strval($row['id']).'">';
+                            echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
+                            echo        '</a>';
+                            echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
+                            echo        '<p class="price-make-up">'.number_format($row["price"],0).'</p>';
+                            echo        '<a href="cart-update.php?type=add&qty=1&id='.strval($row['id']).'&url='.$current_url.'">';
+                            echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
+                            echo        '</a>';
+                            echo    '</div>';
+                            echo'</li>';
+                        }
+                        $row = mysqli_fetch_array($query);
+                    }
+                    echo '</ul>';
+                }
+            ?>
+            
+
         </section>
         <section>
             <div class="pagination">
-                <a href="#" class="page active">1</a>
-                <a href="#" class="page">2</a>
-                <a href="#" class="page">3</a>
-                <a href="#" class="page">4</a>
-                <a href="#" class="page">5</a>
-                <a href="#" class="page">6</a>
-                <a href="#" class="page">7</a>
+                <?php
+                    $up = 2;
+                    $down = 2;
+                    while ($page-$down <= 0)
+                    {
+                        $down--;
+                        $up++;
+                    }
+
+                    while ($page+$up > $count_page)
+                    {
+                        $down++;
+                        $up--;
+                    }
+
+                    for ($i=$page-$down; $i <= $page+$up; $i++) { 
+                        if ($page == $i)
+                        {
+                            echo '<a href="bestseller.php?page='.$i.'" class="page active">'.$i.'</a>';
+                        }
+                        else
+                        {
+                            echo '<a href="bestseller.php?page='.$i.'" class="page">'.$i.'</a>';
+                        }
+                    }
+                    
+                    
+                    
+                ?>
             </div>
         </section>
-         <aside class="update-promotion">
+        <aside class="update-promotion">
             <form action="" method="get">
                 <h2>Cập nhật thông tin khuyến mãi</h2>
                 <input class="ip-mail-km" placeholder="Email Address">

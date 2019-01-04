@@ -19,7 +19,7 @@
     $count_row = mysqli_fetch_array($query);
     $count_page = ceil($count_row[0]/$max_item);
 
-    $sql = "SELECT name, price, image_link, id FROM t_product ORDER BY DISCOUNT desc LIMIT ".strval($page_range+1).",".strval($page_range+$max_item+1)."";
+    $sql = "SELECT name, price, image_link, id FROM t_product LIMIT ".strval($page_range+1).",".strval($page_range+$max_item)."";
     $query = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($query);
 
@@ -79,7 +79,6 @@
                 {
                     echo '<ul class="list-product-make-up clear-fix">';
                     for ($i=0; $i < 4; $i++) { 
-                        $row = mysqli_fetch_array($query);
                         if ($row)
                         {
                             echo '<li>';
@@ -88,14 +87,14 @@
                             echo        '<img src="'.$row["image_link"].'" alt="anh-minh-hoa" class="img-illustrate-home">';
                             echo        '</a>';
                             echo        '<p class="name-product-make-up">'.$row["name"].'</p>';
-                            echo        '<p class="price-make-up">'.$row["price"].'</p>';
+                            echo        '<p class="price-make-up">'.number_format($row["price"],0).'</p>';
                             echo        '<a href="cart-update.php?type=add&qty=1&id='.strval($row['id']).'&url='.$current_url.'">';
                             echo        '<button name="btn-add-checkout" class="btn-add-cart-home">Thêm vào giỏ hàng</button>';
                             echo        '</a>';
                             echo    '</div>';
                             echo'</li>';
                         }
-                        
+                        $row = mysqli_fetch_array($query);
                     }
                     echo '</ul>';
                 }

@@ -1,9 +1,27 @@
 <?php include_once( "commons.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php $status=0 ; if (isset($_GET[ 'id'])) { $sql="SELECT name, price, image_link, id, details FROM t_product WHERE id=" .$_GET[ 'id']; $query=m ysqli_query($conn, $sql); $row=m ysqli_fetch_array($query); if (!$row) { echo '<script type="text/javascript">
-            window.location.href = "notfound.php"</script>'; exit(); } } else { echo '<script type="text/javascript">
-        window.location.href = "notfound.php"</script>'; exit(); } ?>
+<?php
+    $status = 0;
+    if (isset($_GET['id']))
+    {
+        $sql = "SELECT name, price, image_link, id, details FROM t_product WHERE id=".$_GET['id'];
+        $query = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($query);
+        if (!$row)
+        {
+            echo '<script type="text/javascript">
+            window.location.href = "notfound.php"</script>';
+            exit();
+        }
+    }
+    else
+    {   
+        echo '<script type="text/javascript">
+        window.location.href = "notfound.php"</script>';
+        exit();
+    }
+?> 
 
 <head>
     <meta charset="UTF-8">

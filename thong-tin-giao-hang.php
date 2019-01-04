@@ -23,7 +23,7 @@
             <a href="gio-hang.php" target="_self">
                 <img src="images/cart_icon.png" alt="icon-cart">
             </a>
-            <a href="my-account.php" target="_self">
+            <a href="my-account.php" target="_self" id="btn-myacc">
                 <img src="images/account_icon.png" alt="icon-account">
             </a>
             <a href="login.php" class="login-text" id="btn-login">Đăng nhập</a>
@@ -47,7 +47,20 @@
             </ul>
         </nav>
     </header>
+    <?php
+        if(!isset($_SESSION['cart']))
+        {
+            echo '<script type="text/javascript">
+            alert("Bạn chưa có gì ở giỏ hàng !!!");
+            window.location.href = "trang-chu.php"
+            </script>';
+            exit();
+        }
+        else 
+        {
 
+        }
+    ?>
     <main class="main-content">
         <h2 class="hide">Tra cứu đơn hàng</h2>
         <div class="title">
@@ -56,33 +69,34 @@
         </div>
         <section class="container">
             <section class="info-giao-hang">
-                <section class="sign-up-login clear-fix">
+                <section class="sign-up-login clear-fix" id='login-question'>
                     <p>Bạn đã có tài khoản ?</p>
                     <a href="login.php" id="to-login">Đăng nhập</a>
                 </section>
-                <form action="#" method="get" class="info-form-giao-hang clear-fix">
+                <form action="checkout.php?step=1" method="get" class="info-form-giao-hang clear-fix">
+                    <input type="hidden" name="step" value="1" />
                     <div class="lb-ip">
                         <label for="email-giao-hang">Email</label>
-                        <input type="text" placeholder="Nhập email" id="email-giao-hang">
+                        <input name='email' type="text" placeholder="Nhập email" id="email-giao-hang">
                     </div>
                     <div class="lb-ip">
                         <label for="fullname-giao-hang">Họ và tên</label>
-                        <input type="text" placeholder="Nhập họ và tên" id="fullname-giao-hang">
+                        <input name='name' type="text" placeholder="Nhập họ và tên" id="fullname-giao-hang">
                     </div>
                     <div class="lb-ip">
                         <label for="address-giao-hang">Địa chỉ</label>
-                        <input type="text" placeholder="Nhập địa chỉ" id="address-giao-hang">
+                        <input name='address' type="text" placeholder="Nhập địa chỉ" id="address-giao-hang">
                     </div>
                     <div class="lb-ip">
                         <label for="sdt-giao-hang">Số điện thoại</label>
-                        <input type="text" placeholder="Nhập số điện thoại nhận hàng" id="phone-giao-hang">
+                        <input name='phonenumber' type="text" placeholder="Nhập số điện thoại nhận hàng" id="phone-giao-hang">
                     </div>
                     <div class="lb-ip">
                         <label for="">Ghi chú</label>
                         <input type="text" placeholder="Nhập ghi chú (nếu có)" maxlength="200" class="description">
                     </div>
                     <a href="gio-hang.php" class="come-back-cart">&lt;&lt; Quay lại giỏ hàng</a>
-                    <a href="thanh-toan.php"><input type="button" value="Tiếp tục phương thức thanh toán" id="btn-continue"></a>
+                    <input type="submit" value="Tiếp tục phương thức thanh toán" id="btn-continue">
                 </form>
             </section>
             <section class="don-hang">
@@ -90,27 +104,41 @@
                     <tr>
                         <th>Đơn hàng</th>
                     </tr>
+                    <?php
+                    $total_price = 50000;
+                    foreach ($_SESSION['cart'] as $key => $value) {
+                        echo '<tr>';
+                        echo '<td class="a-row clear-fix">';
+                        echo '<div>';
+                        echo '<p class="name-product-giao-hang first first" id="sp1">'.$value['name'].'</p>';
+                        echo '<p class="second">'.number_format($value['price']*$value['qty'], 0).'</p>';
+                        echo '</div>';
+                        echo '<div class="clear-fix">';
+                        echo '<p class="txt-quantity">Số lượng:</p>';
+                        echo '<p id="quantity-gioa-hang-sp1">'.$value['qty'].'</p>';
+                        echo '</div>';
+                        echo '';
+                        echo '</td>';
+                        echo '</tr>';
+                        $total_price += $value['price']*$value['qty'];
+                    }
+                    ?>
                     <tr>
-                        <td class="a-row clear-fix">
+                        <td class="a-row">
                             <div>
-                                <p class="name-product-giao-hang first first" id="sp1">Mặt nạ dưỡng da nha đam ahihi :3</p>
-                                <p class="second">500000</p>
+                                <p  class="first">Tạm tính</p>
+                                <p class="second">30,000</p>
                             </div>
                             <div class="clear-fix">
-                                <p class="txt-quantity">Số lượng:</p>
-                                <p id="quantity-gioa-hang-sp1">1</p>
+                                <p>Phí vận chuyển</p>
                             </div>
-                            
                         </td>
                     </tr>
                     <tr>
                         <td class="a-row">
                             <div>
-                                <p  class="first">Tạm tính</p>
-                                <p class="second">500000</p>
-                            </div>
-                            <div class="clear-fix">
-                                <p>Phí vận chuyển</p>
+                                <p  class="first">Tổng tiền</p>
+                                <p class="second"><?php echo number_format($total_price,0) ?></p>
                             </div>
                         </td>
                     </tr>
@@ -171,4 +199,5 @@
     </footer>
 </body>
 
-</html><?php include_once("login-logout-process.php"); ?>
+</html>
+<?php include_once("login-logout-process.php"); ?>

@@ -4,6 +4,9 @@
     {
         // Nút đăng nhập
         echo "<script>document.getElementById('btn-login').text = 'Đăng xuất';document.getElementById('btn-login').href='logout.php';</script>";
+        // Ẩn dòng đăng nhập
+        echo "<script>document.getElementById('login-question').style.display = 'none';</script>";
+
     }
     else
     {
