@@ -70,7 +70,6 @@
         unset($_SESSION['cart']);
     }
 
-    
     header('Location:'.$return_url);
     exit();
 ?>
