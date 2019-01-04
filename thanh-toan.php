@@ -24,10 +24,10 @@
             <a href="gio-hang.php" target="_self">
                 <img src="images/cart_icon.png" alt="icon-cart">
             </a>
-            <a href="my-account.php" target="_self">
+            <a href="my-account.php" target="_self" id="btn-myacc">
                 <img src="images/account_icon.png" alt="icon-account">
             </a>
-            <a href="login.php" class="login-text">Đăng nhập</a>
+            <a href="login.php" class="login-text" id="btn-login">Đăng nhập</a>
         </section>
         <section class="shop-name">
             <p><a href="trang-chu.php">2GB Shop</a>
@@ -48,6 +48,22 @@
             </ul>
         </nav>
     </header>
+    <?php
+    if (!isset($_SESSION['trans']))
+        {
+            echo '<script type="text/javascript">
+            alert("Bạn chưa điền thông tin giao hàng!!!");
+            window.location.href = "thong-tin-giao-hang.php";
+            </script>';
+            exit();
+        }
+    $ship_price = 30000;
+    if (isset($_SESSION['email']))
+    {
+        $ship_price = 20000;
+    }
+    $total_price = $ship_price;
+    ?>
     <main class="main-content">
         <section class="container">
             <h2 class="hide">Thanh toán</h2>
@@ -63,7 +79,7 @@
                             <ul>
                                 <li class="clear-fix">
                                     <label class="lbl-container clear-fix">Giao hàng thông thường
-                                        <input type="radio" name="radio" onclick="return false;" checked="checked">
+                                        <input type="radio" name="radio" onclick="return false;"<?php if (!isset($_SESSION['email'])){echo ' checked="checked"';}?>>
                                         <span class="checkmark"></span>
                                     </label>
                                     <p class="price-ship">30,000</p>
@@ -71,7 +87,7 @@
                                 <li class="clear-fix">
                                     <label class="lbl-container">
                                         Giao hàng ưu đãi (Đăng nhập để nhận ưu đãi)
-                                        <input type="radio" name="radio" onclick="return false;">
+                                        <input type="radio" name="radio" onclick="return false;"<?php if (isset($_SESSION['email'])){echo ' checked="checked"';}?>>
                                         <span class="checkmark"></span>
                                     </label>
                                     <p class="price-ship">20,000</p>
@@ -81,21 +97,23 @@
                     </form>
                 </section>
                 <section class="pay clear-fix">
-                    <form action="" method="get">
+                    <form action="checkout.php" method="get">
+                        <input type="hidden" name="step" value="2" />
+                        <input type="hidden" name="price" id="price" value="" />
                         <h3>Phương thức thanh toán</h3>
                         <div>
                             <ul>
                                 <li>
                                     <label class="lbl-container-pay">
                                         Thanh toán khi nhận hàng (COD) tại TP Hồ Chí Minh
-                                        <input type="radio" name="radio" checked="checked">
+                                        <input type="radio" name="radio" value='hcm' checked="checked">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li>
                                     <label class="lbl-container-pay">
                                         Thanh toán khi nhận hàng (COD) tại các tỉnh khác
-                                        <input type="radio" name="radio">
+                                        <input type="radio" name="radio" value='tinhkhac'>
                                         <span class="checkmark"></span>
                                     </label>
 
@@ -103,16 +121,14 @@
                                 <li>
                                     <label class="lbl-container-pay">
                                         Chuyển khoản trước qua ngân hàng
-                                        <input type="radio" name="radio">
+                                        <input type="radio" name="radio" value='bank'>
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                             </ul>
                         </div>
-                    </form>
-                    <form action="" method="get">
-                        <a href="thong-tin-giao-hang.php" class="come-back-cart">&lt;&lt; Quay lại thông tin giao hàng</a>
-                        <input type="button" value="Hoàn tất đơn hàng" id="btn-end-don-hang">
+                        <a href='thong-tin-giao-hang.php' class="come-back-cart">&lt;&lt; Quay lại thông tin giao hàng</a>
+                        <input type="submit" value="Hoàn tất đơn hàng" id="btn-end-don-hang">
                     </form>
 
                 </section>
@@ -123,7 +139,6 @@
                         <th>Đơn hàng</th>
                     </tr>
                     <?php
-                    $total_price = 50000;
                     foreach ($_SESSION['cart'] as $key => $value) {
                         echo '<tr>';
                         echo '<td class="a-row clear-fix">';
@@ -145,10 +160,18 @@
                         <td class="a-row">
                             <div>
                                 <p class="first">Tạm tính</p>
-                                <p class="second">500000</p>
+                                <p class="second"><?php echo number_format($ship_price,0) ?></p>
                             </div>
                             <div class="clear-fix">
                                 <p>Phí vận chuyển</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="a-row">
+                            <div>
+                                <p  class="first">Tổng tiền</p>
+                                <p class="second"><?php echo number_format($total_price,0) ?></p>
                             </div>
                         </td>
                     </tr>
@@ -213,3 +236,8 @@
 
 
 <?php include_once("login-logout-process.php"); ?>
+<?php 
+    echo '<script>';
+    echo 'document.getElementById("price").value ="'.$total_price.'";';
+    echo '</script>';
+?>

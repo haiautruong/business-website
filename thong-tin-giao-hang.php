@@ -56,10 +56,7 @@
             </script>';
             exit();
         }
-        else 
-        {
-
-        }
+        
     ?>
     <main class="main-content">
         <h2 class="hide">Tra cứu đơn hàng</h2>
@@ -73,7 +70,7 @@
                     <p>Bạn đã có tài khoản ?</p>
                     <a href="login.php" id="to-login">Đăng nhập</a>
                 </section>
-                <form action="checkout.php?step=1" method="get" class="info-form-giao-hang clear-fix">
+                <form action="checkout.php" method="post" class="info-form-giao-hang clear-fix">
                     <input type="hidden" name="step" value="1" />
                     <div class="lb-ip">
                         <label for="email-giao-hang">Email</label>
@@ -93,7 +90,7 @@
                     </div>
                     <div class="lb-ip">
                         <label for="">Ghi chú</label>
-                        <input type="text" placeholder="Nhập ghi chú (nếu có)" maxlength="200" class="description">
+                        <input name='note' type="text" placeholder="Nhập ghi chú (nếu có)" maxlength="200" class="description">
                     </div>
                     <a href="gio-hang.php" class="come-back-cart">&lt;&lt; Quay lại giỏ hàng</a>
                     <input type="submit" value="Tiếp tục phương thức thanh toán" id="btn-continue">
@@ -201,3 +198,19 @@
 
 </html>
 <?php include_once("login-logout-process.php"); ?>
+<?php 
+    if (isset($_SESSION['email']))
+    {
+            $sql = "SELECT name, email, addr FROM t_user WHERE email='".$_SESSION['email']."'";
+            $query = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_array($query);
+            echo '<script>';
+            echo 'document.getElementById("email-giao-hang").value ="'.$row['email'].'";';
+            echo 'document.getElementById("fullname-giao-hang").value ="'.$row['name'].'";';
+            if ($row['addr'])
+            {
+                echo 'document.getElementById("address-giao-hang").value ="'.$row['addr'].'";';
+            }
+            echo '</script>';
+    }
+?>
