@@ -59,9 +59,9 @@
     ?>
     <main class="main-content">
         <section class="items-form">
-            <h2 class="hide">Bestseller</h2>
+            <h2 class="hide">Hàng mới về</h2>
             <div class="title">
-                <p>Bestseller</p>
+                <p>Hàng mới về</p>
                 <hr>
             </div>
             <div class="filter">
