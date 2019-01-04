@@ -92,26 +92,11 @@
                             <p class="price-sales"><span>(Tiết kiệm: </span>
                                 <label id="sales">10%</label>)</p>
                         </section>
-                        <div class="quantity-detail clear-fix">
-                            <p class="before-discount-price">
-
-                            </p>
-                            <div class="quantity-detail">
-                                <p>Số lượng</p>
-                                <a href="">
-                                    <img src="images/arrow-dow.PNG" alt="decreses" class="arrow-incre-detail">
-                                </a>
-                                <label class="number-product-detail">1</label>
-                                <a href="">
-                                    <img src="images/arrow-up.PNG" alt="increase" class="arrow-decre-detail">
-                                </a>
-                            </div>
-                        </div>
+                        <div class="cart-detail">
+                            <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
+                            <img src="images/cart-detail.png" alt="icon-cart">
+                       </div>
                     </div>
-                    <div class="cart-detail">
-                        <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
-                        <img src="images/cart-detail.png" alt="icon-cart">
-                   </div>
                 </form>
 
             </section>

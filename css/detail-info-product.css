@@ -14,7 +14,7 @@
     width: 50%;
 }
 .cart-detail>img{
-    width: 9%;
+    width: 60px;
     margin-left: 30px;
     position: relative;
     top: 22px;
@@ -125,4 +125,9 @@
 .arrow-decre{
     width: 20px;
     height: 20px;
+}
+
+.cart-detail {
+    position: relative;
+    top: 120px;
 }
