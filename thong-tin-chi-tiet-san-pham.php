@@ -5,7 +5,7 @@
     $status = 0;
     if (isset($_GET['id']))
     {
-        $sql = "SELECT name, price, image_link, id, details FROM t_product WHERE id=".$_GET['id'];
+        $sql = "SELECT name, price, image_link, id, details, discount FROM t_product WHERE id=".$_GET['id'];
         $query = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($query);
         if (!$row)
@@ -22,7 +22,11 @@
         exit();
     }
 ?> 
-
+<?php
+// url trang hiện tại
+$url      = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$validURL = base64_encode(str_replace("&", "&amp", $url));
+?>
 <head>
     <meta charset="UTF-8">
     <title>Thông tin chi tiết sản phẩm</title>
@@ -77,7 +81,7 @@
                 <hr>
             </div>
             <section class="main-info-product">
-                <form action="" method="" class="clear-fix">
+                <section class="clear-fix">
                     <img src="<?php echo $row['image_link']?>" alt="anh-minh-hoa-san-pham" class="img-product-detail">
                     <div class="some-main-info-product">
                         <p class="name-product-detail">
@@ -87,17 +91,33 @@
                         <section class="container-total-detail">
                             <p id="txt-total-detail">Giá:</p>
                             <p id="total-detail">
-                                <?php echo $row[ 'price'] ?>
+                                <?php echo number_format($row[ 'price'],0); ?>
                             </p>
-                            <p class="price-sales"><span>(Tiết kiệm: </span>
-                                <label id="sales">10%</label>)</p>
+                            <?php
+                            if ($row['discount'] > 0)
+                            {
+                                echo '<p class="price-sales"><span>(Tiết kiệm: </span>';
+                                echo '<label id="sales">';
+                                echo $row['discount'];
+                                echo '%</label>)';
+                                echo '</p>';
+                            }
+                            ?>
                         </section>
                         <div class="cart-detail">
-                            <button class="btn-add-cart-detail" type="submit">Thêm vào giỏ hàng</button>
+                        <?php
+                        $sql = "SELECT name, price, image_link, id, details FROM t_product WHERE id=".$_GET['id'];
+                        $query = mysqli_query($conn, $sql);
+                        $row = mysqli_fetch_array($query);
+                        
+                        echo '<a href="cart-update.php?type=add&qty=1&id='.strval($row['id']).'&url='.$validURL.'">';
+                        echo '<button name="btn" class="btn-add-cart-detail">Thêm vào giỏ hàng</button>';
+                        echo '</a>';
+                        ?>
                             <img src="images/cart-detail.png" alt="icon-cart">
                        </div>
                     </div>
-                </form>
+                </section>
 
             </section>
             <section class="detail-info-product">

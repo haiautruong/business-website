@@ -9,11 +9,14 @@
 </head>
 <?php
 // url trang hiện tại
-$current_url = base64_encode($_SERVER['REQUEST_URI']);
+$url      = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$validURL = str_replace("&", "&amp", $url);
 ?>
 
 
 <body>
+
+
     <header class="clear-fix">
         <section class="header">
             <h1 class="hide">Search bar</h1>
@@ -203,3 +206,6 @@ $current_url = base64_encode($_SERVER['REQUEST_URI']);
 
 </html>
 <?php include_once("login-logout-process.php"); ?>
+<?php echo $_SERVER['REQUEST_URI'];
+        echo "hello";
+?>
